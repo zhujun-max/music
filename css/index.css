@@ -1,0 +1,300 @@
+.carousel-indicators li{
+	width: 10px;height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 2%;
+}
+.carousel-indicators .active {
+		background-color: #f00;
+}
+.carousel-control-prev,
+.carousel-control-next{
+		width:4%;height: 20%;
+		background-color: #aaa;
+		border-radius: 0.25rem;
+		top:40%;
+	}
+	#d2{height: 100px;background-color: #000000;}
+
+	.app{
+		background-image: url(../img/index/客户端下载.png);
+		background-size: 104%;
+		background-repeat: no-repeat;
+	}
+	.app a{
+		width: 255px;height: 75px;
+		background-image: url(../img/index/客户端下载.png);
+		margin-top: 205px;
+		margin-left: 15px;
+		background-position: 5px 77px;
+		background-size: 114%;
+	}
+	.app p{
+		font-size: 12px;
+		margin-bottom: 0;
+		margin-top: 5px;
+	}
+	.f1{
+		border-bottom:2px solid rgb(194,12,12) ;
+		background-image: url(../img/index/ia_400000263.png);
+		background-repeat: no-repeat;
+		background-position: -230px -150px;
+		background-size: 50%;
+	}
+	.ustyle{
+		border-bottom: 2px solid red;
+	}
+	.myfont{
+		font-size:20px ;
+		margin-top:20px ;
+	}
+	.breadcrumb{
+		background-color: #F5F5F5;
+	}
+	.breadcrumb-item+.breadcrumb-item::before{
+		content: "丨";
+	}
+	.nav_font_color{
+		color: #ccc;
+	}
+	.font_small{
+		font-size: 12px;
+	}
+	.font_midle{
+		font-size: 14px;
+	}
+	.myheight{
+		height: 235px;
+		cursor: pointer;
+	}
+	.mybg{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000001.jpg);
+	}
+	.mybg1{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000002.jpg);
+	}
+	.mybg2{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000003.jpg);
+	}
+	.mybg3{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000004.jpg);
+	}
+	.mybg4{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000005.jpg);
+	}
+	.mybg5{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000006.jpg);
+	}
+	.mybg6{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000007.jpg);
+	}
+	.mybg7{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000008.jpg);
+	}
+	.mybg8{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000020.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.mybg9{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000021.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.mybg10{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000025.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.mybg11{
+		width: 140px;height: 140px;
+		background-image: url(../img/index/ia_400000024.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.myheight a{
+		width: 140px;
+		margin-top: -10px;
+	}
+	.mytop{
+		width: 140px;height: 113px;
+	}
+	.mybottom{
+		width: 140px;height: 27px;
+		background-color: rgba(0,0,0,.5);
+	}
+	.headset{
+		width: 20px;height: 20px;
+		background-image: url(../img/index/ia_400000158.png);
+		background-position: 0px -24px;
+		background-size: 785%;
+	}
+	.bottom_font{
+		color: #e8e8e8;
+		margin-top: 4px;
+		margin-left:5px ;
+		font-size: 5px;
+	}
+	.bottom_play{
+		width: 20px;height: 20px;
+		margin-top:3px;
+		margin-left: 45px;
+		background-image: url(../img/index/ia_400000158.png);
+		background-size: 785%;
+		background-position: 0px 0px;
+	}
+	.bottom_play:hover{
+		background-image: url(../img/index/ia_400000158.png);
+		background-size: 785%;
+		background-position: 0px -76px;
+	}
+	.newdie{
+		width: 650px;height: 150px;
+		background-color: rgb(245,245,245);
+		margin-left: 70px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.die{
+		width: 118px;height: 100px;
+		background-image: url(../img/index/ia_400000229.png);
+		background-repeat: no-repeat;
+		background-position: -345px -354px;
+		background-size: 483%;
+	}
+	.f4{
+		width: 690px;height: 530px;
+		background-image: url(../img/index/ia_400000162.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.f4_img{
+		width: 80px;height: 80px;
+		background-image: url(../img/index/ia_400000029.jpg);
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.f4_img1{
+		width: 80px;height: 80px;
+		background-image: url(../img/index/ia_400000030.jpg);
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.f4_img2{
+		width: 80px;height: 80px;
+		background-image: url(../img/index/ia_400000031.jpg);
+		background-size: 100%;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.f4_play{
+		width: 25px;height: 25px;
+		background-image: url(../img/index/ia_400000263.png);
+		background-position: -265px -205px;
+		background-repeat: no-repeat;
+	}
+	.f4_collect{
+		width: 25px;height: 25px;
+		background-image: url(../img/index/ia_400000263.png);
+		background-position: -295px -205px;
+		background-repeat: no-repeat;
+	}
+	.f4_play:hover{
+		background-position: -265px -235px;
+	}
+	.f4_collect:hover{
+		background-position: -295px -235px;
+	}
+	.m_0{
+		width: 200px;
+		margin-left: -90px;
+	}
+	.user{
+		width: 279px;
+		height: 250px;
+		background-color: rgb(246,246,246);
+	}
+	.user_img{
+		width: 99px;height: 99px;
+		margin-top: 4px;
+		margin-left: 8px ;
+	}
+	.user_head{
+		height: 110px;
+	}
+	.user_name{
+		margin-top: 20px;
+	}
+	.user_font{
+		width: 70px;
+		font-size: 18px;
+	}
+	.vip{
+		width: 43px;height: 30px;
+		background-image: url(../img/index/12.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		
+	}
+	.viplv{
+		width: 90px;height: 40px;
+		display: block;
+		background-image: url(../img/index/微信图片_20200712204251.png);
+		background-repeat: no-repeat;
+		margin-top: -85px;
+		margin-left: 130px;
+	}
+	.vip_up{
+		font-size:20px ;
+		padding-left:55px ;
+		margin-bottom: 10px;
+	}
+	.vip-3{
+		margin-top: 80px;
+	}
+	.myborder{
+		width: 1px;height: 60px;
+		border: 1px solid #e8e8e8;
+	}
+	.font-big{
+		font-size:23px;
+	}
+	.userdong{
+		margin-top: 80px;
+	}
+	.border-bottom{
+		border-bottom:3px solid #E8E8E8 !important;
+	}
+	a:hover{
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.03);
+	}
+	.btbg{
+		text-decoration: none;
+		/* background-image: url(../img/index/ia_400000265.png); */
+		background-repeat: no-repeat;
+		background-position: 300px 0px;
+	}
+	.zhubo{
+		width: 20px;height: 30px;
+		background-image: url(../img/index/ia_400000270.png);
+		background-size: 790%;	
+	}
+	.zhubo_img{
+		width: 55px;height: 55px;
+	}
+	

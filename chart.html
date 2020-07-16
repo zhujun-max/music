@@ -1,0 +1,781 @@
+<!--
+ * @Author: 李鑫
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 排行榜
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜-李鑫</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/chart.css">
+</head>
+
+<body>
+    <iframe src="head.html" width="100%" height="105px" frameborder="0"></iframe>
+    <div class="container">
+        <div class="row no-gutters mt-5">
+            <!-- 左边导航部分 -->
+            <div class="col-md-3 border d-sm-none d-md-block">
+                <!-- 特色榜导航栏 -->
+                <div class="font_small w-100 font-weight-bold pl-3 mt-4 mb-2">云音乐特色榜</div>
+                <ul class="list-unstyled p-0 font_size ">
+                    <!-- 特色榜导航1 -->
+                    <li class="media py-2 px-4">
+                        <img src="./img/chart/ia_200000000.jpg">
+                        <div class="media-body pl-2 d-flex flex-column">
+                            <div><a href="#" class="text-dark">云音乐飙升榜</a></div>
+                            <div><a href="#" class="text-muted">每日更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 特色榜导航2 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000001.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐新歌榜</a></div>
+                            <div><a href="#" class="text-muted font_size">每日更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 特色榜导航3 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000002.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">网易原创歌曲榜</a></a>
+                            </div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- 全球媒体榜 -->
+                <div class="font_small w-100 font-weight-bold pl-3 mb-2">全球媒体榜</div>
+                <ul class="list-unstyled p-0 font_size">
+                    <!-- 媒体榜导航1 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000004.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航2 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000005.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航3 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000007.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航4 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000012.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航5 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000013.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航6 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000014.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航7 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000015.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航8 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000016.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航9 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000017.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航10 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000018.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航11 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000019.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航12 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000020.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航13 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000021.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航14 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000022.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航15 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000023.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航16 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000024.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航17 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000025.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航18 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000026.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航19 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000028.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航20 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000027.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航21 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000030.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航22 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000032.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航23 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000003.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航24 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000004.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航25 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000005.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航26 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000006.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航27 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000019.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航28 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000008.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航29 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000009.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐说唱榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航30 -->
+                    <li class="media py-2  px-4">
+                        <img src="./img/chart/ia_200000010.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐古典音乐榜</a></div>
+                            <div><a href="#" class="text-muted">刚刚更新</a></div>
+                        </div>
+                    </li>
+                    <!-- 媒体榜导航31 -->
+                    <li class="media py-2  px-4 ">
+                        <img src="./img/chart/ia_200000011.jpg">
+                        <div class="media-body pl-2">
+                            <div><a href="#" class="text-dark">云音乐抖音榜</a></div>
+                            <div><a href="#" class="text-muted">每周五更新</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 右边内容部分 -->
+            <!-- 上边部分 -->
+            <div class="col-md-9 col-sm-12 border p-5">
+                <div class="media">
+                    <img src="./img/chart/ia_200003979.jpg " class="w-25 img-thumbnail">
+                    <div class="media-body pl-4 mt-4">
+                        <div class="h5 font-weight-light text-dark mt-3">云音乐飙升榜</div>
+                        <div class="font_size text-muted my_bgc d-flex mt-2">
+                            <div class="u_icn"></div>
+                            <div class="ml-1">最近更新：07月09日 （每天更新）</div>
+                        </div>
+                        <div class="d-flex mt-4 font_size">
+                            <!-- 按钮1 -->
+                            <a href="#" class="text-white btn1 ">
+                                <div class="float-right">播放</div>
+                            </a>
+                            <a href="#" class="btn2"></a>
+                            <a href="#" class="btn3  text-dark">
+                                <div class="float-right mr-2">(3159503)</div>
+                            </a>
+                            <a href="#" class="btn4 ml-1 text-dark">
+                                <div class="float-right mr-2">(8762)</div>
+                            </a>
+                            <a href="#" class="btn5 ml-1 text-dark">
+                                <div class="float-right mr-2">下载</div>
+                            </a>
+                            <a href="#" class="btn6 ml-1 text-dark">
+                                <div class="float-right mr-2">(187741)</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 歌曲边栏部分 -->
+                <div class="d-flex justify-content-between font_size mt-5 mb-2">
+                    <div>
+                        <span class="h5">歌曲列表</span><span class=" text-muted pl-3">100首歌</span>
+                    </div>
+                    <div>播放：<span class="text-danger font-weight-bold">3316075776</span>次</div>
+                </div>
+                <!-- 歌曲部分 -->
+                <div class="border my_border">
+                    <table class="table p-0 m-0 table-bordered text-muted">
+                        <tr class="font_size border th_height">
+                            <th></th>
+                            <th>标题</th>
+                            <th>时长</th>
+                            <th>歌手</th>
+                        </tr>
+                    </table>
+                    <table class="table table-striped font_size mb-0 pb-0">
+                        <!-- 第一行歌手 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div class="mt-3">1</div>
+                                <div class="my_style_1_1 ml-2 mt-3"></div>
+                            </td>
+                            <td class="d-flex">
+                                <div><img src="./img/chart/ia_200000036.jpg"></div>
+                                <div class="my_bgcolor_1 ml-2 mt-3"></div>
+                                <div class="float-left mt-3 ml-1"><a href="#" class="text-dark">要我怎么办</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="mt-3">03:29</div>
+                            </td>
+                            <td>
+                                <div class="mt-3">李荣浩</div>
+                            </td>
+                        </tr>
+                        <!-- 第二行歌手 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div class="mt-3">2</div>
+                                <div class="my_style_1_1 ml-2 mt-3"></div>
+                            </td>
+                            <td class="d-flex">
+                                <div><img src="./img/chart/ia_200000094.jpg"></div>
+                                <div class="my_bgcolor_1 ml-2 mt-3"></div>
+                                <div class="float-left mt-3 ml-1"><a href="#" class="text-dark">爱，存在</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="mt-3">04:29</div>
+                            </td>
+                            <td>
+                                <div class="mt-3">卢卢快闭嘴</div>
+                            </td>
+                        </tr>
+                        <!-- 第三行歌手 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div class="mt-3">3</div>
+                                <div class="my_style_1_1 ml-2 mt-3"></div>
+                            </td>
+                            <td class="d-flex">
+                                <div><img src="./img/chart/ia_200000077.jpg"></div>
+                                <div class="my_bgcolor_1 ml-2 mt-3"></div>
+                                <div class="mt-3 ml-1"><a href="#" class="text-dark">Everything's Alright</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="mt-3">01:29</div>
+                            </td>
+                            <td>
+                                <div class="mt-3 text-truncate my_ellipsis">塞壬唱片-MSR明日方舟</div>
+                            </td>
+                        </tr>
+                        <!-- 第四行歌手 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>4</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">脆弱星球</a></div>
+                            </td>
+                            <td class="text-dark">
+                                01:29
+                            </td>
+                            <td>
+                                杨胖雨
+                            </td>
+                        </tr>
+                        <!-- 歌手5 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>5</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">海底</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="">01:29</div>
+                            </td>
+                            <td>
+                                <div>一只榴莲</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手6 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>6</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">雨爱</a></div>
+                                <div class="my_bgcolor_2 ml-1"></div>
+                            </td>
+                            <td class="text-dark">
+                                <div>01:29</div>
+                            </td>
+                            <td>
+                                <div>周星星</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手7 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>7</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">那年夏天,那个海边</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="">01:29</div>
+                            </td>
+                            <td>
+                                <div>胡瑞特</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手8 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>8</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">莫失莫忘</a></div>
+                                <div class="my_bgcolor_2 ml-1"></div>
+                            </td>
+                            <td class="text-dark">
+                                <div>01:29</div>
+                            </td>
+                            <td>
+                                <div>郑云龙</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手9 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>9</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">脆弱星球</a></div>
+                            </td>
+                            <td class="text-dark">
+                                01:29
+                            </td>
+                            <td>
+                                杨胖雨
+                            </td>
+                        </tr>
+                        <!-- 歌手10 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>10</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">海底</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="">01:29</div>
+                            </td>
+                            <td>
+                                <div>一只榴莲</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手11-->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>11</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">雨爱</a></div>
+                                <div class="my_bgcolor_2 ml-1"></div>
+                            </td>
+                            <td class="text-dark">
+                                <div>01:29</div>
+                            </td>
+                            <td>
+                                <div>周星星</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手12 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>12</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">那年夏天,那个海边</a></div>
+                            </td>
+                            <td class="text-dark">
+                                <div class="">01:29</div>
+                            </td>
+                            <td>
+                                <div>胡瑞特</div>
+                            </td>
+                        </tr>
+                        <!-- 歌手13 -->
+                        <tr class="d-flex">
+                            <td class="text-muted d-flex">
+                                <div>13</div>
+                                <div class="my_style_1_1 ml-2 "></div>
+                            </td>
+                            <td class="d-flex">
+                                <div class="my_bgcolor_1 ml-1 "></div>
+                                <div class="ml-1"><a href="#" class="text-dark">莫失莫忘</a></div>
+                                <div class="my_bgcolor_2 ml-1"></div>
+                            </td>
+                            <td class="text-dark">
+                                <div>01:29</div>
+                            </td>
+                            <td>
+                                <div>郑云龙</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 歌手下的评论区 -->
+                <div class="h5 mt-5 pb-2 b_border">评论 <span class="font_size text-muted">共187687条评论</span></div>
+                <div class="d-flex">
+                    <div>
+                        <img src="./img/chart/ia_200000037.jpg" class="my_bgcolor_3">
+                    </div>
+                    <div class="ml-2">
+                        <textarea class="u_txt font_size text-muted">评论
+							</textarea>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="d-flex">
+                                <div class="my_bgcolor_4"></div>
+                                <div class="my_bgcolor_5 ml-2"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="font_size mt-1 text-muted">140</div>
+                                <a class="btn-sm font_size btn-primary text-white ml-2">评论</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 精彩评论 -->
+                <div class="font-weight-bold my_b font_size mt-5 pb-1 mb-3">
+                    精彩评论
+                </div>
+                <!-- 评论区第1个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000084.jpg">
+                    <div class="pl-2 my_width">
+                        <div class="mt-1"><a href="#">Mr_齐先森：</a>恭喜安河桥首进榜首，恭喜宋胖子，也感谢薛之谦的演绎</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2017年6月15日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(4169)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第2个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000086.jpg">
+                    <div class="pl-2 my_width">
+                        <div class="mt-1"><a href="#">帐号已注销：</a>numb会第一的</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2017年7月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(6666)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第3个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000078.jpg">
+                    <div class="pl-2 my_width">
+                        <div class="mt-1"><a href="#">Lameior：</a>我只能说流水的第一，铁打的发姐和老薛。</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2018年12月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(5466)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第4个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000081.jpg">
+                    <div class="pl-2 my_width">
+                        <div class="mt-1"><a href="#">东轩少来：</a>杰伦新歌明天更新，大家散了吧。</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2019年12月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(6999)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第5个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000062.jpg" class="my_fixed">
+                    <div class="pl-2 my_width">
+                        <div><a href="#">青丝20184：</a>第一第二都很好啊！绝代真的很好听，词曲都很许嵩！作为嵩哥十年的老粉，也非常支持福西西，他是很不错的新人！未来可期！</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2019年2月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(8999)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第6个 -->
+                <div class="d-flex font_size mb-3 border_bottom pb-3">
+                    <img src="./img/chart/ia_200000058.jpg" class="my_fixed">
+                    <div class="pl-2 my_width">
+                        <div class="mb-2"><a href="#">Flower_花重锦官城：</a>排行榜前二都是我喜欢的歌手哈哈哈哈哈哈哈哈哈，绒绒深深❤️</div>
+                        <div class="px-3 py-2 bg_color"><a href="#">云音乐客服：</a>各位宝宝，关于杰伦飙升榜的情况，小客服这边跟大家说一下相关的情况：因为杰伦新歌发布当天飙升率太高了，而飙升率是相对前一天的数据计算的，所以会出现今天没有上榜的现象，这个是正常的情况，数据也是没有问题的，还请大家理解，也不要担心，杰伦新歌的热度还是最高的，这个从新歌榜就可以看出来哦</div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2019年2月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(8999)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论区第7个 -->
+                <div class="d-flex font_size mb-3  pb-3">
+                    <img src="./img/chart/ia_200000062.jpg" class="my_fixed">
+                    <div class="pl-2 my_width">
+                        <div><a href="#">H-a-C：</a>
+                            <span class="mb-1">作词：许嵩</span>
+                            <p class="mb-1">作曲：许嵩</p>
+                            <p class="mb-1">制作人：许嵩</p>
+                            <p class="mb-1">和声／和声编写：许嵩</p>
+                            <p class="mb-1">录音师：许嵩</p>
+                            <p class="mb-1">混音师：许嵩</p>
+                            <p class="mb-1">母带处理工程 ：许嵩</p>
+                            <p class="mb-1">——2018 许嵩《寻宝游戏》</p>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div>2019年2月27日</div>
+                            <div class="d-flex">
+                                <div class="my_bgcolor_6 mr-1"></div>
+                                <div><a href="#" class="text-dark">(8999)</a> <span class="text-muted"> | </span> <a href="#" class="text-dark">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination font_size pt-4 justify-content-center">
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link text-muted">&lt;上一页</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">6</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">7</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">8</a>
+                    </li>
+                    <li class="ml-1">...</li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">9988</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link text-dark">下一页&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="top">
+        <a href="#">
+            <div class="my_bgcolor_7 mx-auto"></div>
+            <div class="text-center text-muted font_size">TOP</div>
+        </a>
+    </div>
+    </div>
+    <iframe src="foot.html" width="100%" height="175px" frameborder="0"></iframe>
+</body>
+
+</html>

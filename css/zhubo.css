@@ -1,0 +1,325 @@
+	* {
+	    margin: 0;
+	    padding: 0;
+	}
+	/* 中间主体部分宽高、居中、字体 */
+	
+	#parent {
+	    width: 980px;
+	    padding: 40px;
+	    padding-bottom: 30px;
+	    margin: 0 auto;
+	    font-family: sans-serif;
+	}
+	/* 左右两侧大背景颜色 */
+	
+	.bg-big {
+	    background-color: #f5f5f5 !important;
+	}
+	/* 主体边框颜色 */
+	
+	.border-secondary {
+	    border-color: #d3d3d3 !important;
+	}
+	/* top内容区icon图标固定宽高以及外编剧 */
+	
+	.icon {
+	    width: 48px;
+	    height: 48px;
+	    margin: 2px 11px 0px;
+	}
+	/* top内容区轮播指示器统一样式 */
+	
+	.carousel-indicators li {
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    background: url(../img/zhubo/ia_200000091.png) no-repeat 0px 0px;
+	    top: 35px;
+	}
+	/* top内容区轮播指示器当前位置样式 */
+	
+	.carousel-indicators .active {
+	    background: url(../img/zhubo/ia_200000091.png) no-repeat -30px 0px;
+	}
+	/* top内容区轮播图统一样式 */
+	
+	.carousel-indicators {
+	    bottom: -20px !important;
+	}
+	
+	.carousel-control-prev,
+	.carousel-control-next {
+	    color: #c7c7c7;
+	    width: 20px;
+	    height: 30px;
+	    border-radius: 0.25rem;
+	    top: 40%;
+	}
+	/* top内容区轮播图prev箭头样式 */
+	
+	.carousel-control-prev-icon {
+	    background: url(../img/zhubo/ia_200000091.png) no-repeat 0px -35px;
+	}
+	/* top内容区轮播图prev定位 */
+	
+	.carousel-control-prev {
+	    left: -25px;
+	}
+	/* top内容区轮播图next箭头样式 */
+	
+	.carousel-control-next-icon {
+	    background: url(../img/zhubo/ia_200000091.png) no-repeat -30px -35px;
+	}
+	/* top内容区轮播图prev定位 */
+	
+	.carousel-control-next {
+	    right: -25px;
+	}
+	/* icon下字体 */
+	
+	.list-unstyled.d-flex a {
+	    font-size: 12px;
+	    color: #888;
+	}
+	/* icon的li的宽高，内部文本居中，微调 */
+	
+	.d-flex>li {
+	    width: 70px;
+	    height: 72px;
+	    text-align: center;
+	    padding-bottom: 6px;
+	}
+	/* icon的li的悬停效果 */
+	
+	.d-flex>li:hover {
+	    background-color: #f5f5f5;
+	    border-radius: 4px;
+	}
+	/* 内容上区域 td上边框去除 */
+	
+	#details .table-striped td {
+	    border-top: 0;
+	}
+	/* 内容上区域 a标签文字颜色 */
+	
+	#details a {
+	    color: #333;
+	}
+	/* 内容上区域 表格边框 */
+	
+	#details .table-striped {
+	    border: 1px solid #e4e4e4;
+	    border-top: 2px solid #c20c0c;
+	}
+	/* 内容上区域 表格固定宽度，不被内容撑开 */
+	
+	#details table {
+	    table-layout: fixed;
+	}
+	/* 内容上区域 带边框文字的鼠标悬停效果 */
+	
+	#details .table .border:hover {
+	    color: #666 !important;
+	    border-color: #999 !important;
+	}
+	/* 内容上区域 未带边框文字的鼠标悬停效果 */
+	
+	#details>div>table p a:hover {
+	    text-decoration: underline;
+	}
+	/* 内容上区域 标题内容鼠标悬停效果 */
+	
+	#details>div>#title>a:hover {
+	    text-decoration: underline;
+	}
+	/* 内容上区域 表格的偶数行改为深色背景色 */
+	
+	#details .table-striped tr:nth-of-type(even) {
+	    background-color: #f7f7f7 !important;
+	}
+	/* 内容上区域 表格的奇数行改为白色背景色 */
+	
+	#details .table-striped tr:nth-of-type(odd) {
+	    background-color: #fff !important;
+	}
+	/* 内容上区域 表格中tr鼠标悬停出播放图标 */
+	
+	#details .table-hover tr:hover .my_bgimg {
+	    position: absolute;
+	    background: url(../img/zhubo/ia_100000028.png) no-repeat 9px -76px;
+	    width: 30px;
+	    height: 30px;
+	    z-index: 2;
+	}
+	/* 内容上区域 表格中tr鼠标悬停样式 */
+	
+	#details .table-hover tr:hover {
+	    background-color: rgba(0, 0, 0, 0.075) !important;
+	}
+	/* 内容上区域 播放图标父元素定位对象 */
+	
+	#details .ding_wei1 {
+	    position: relative;
+	}
+	/* 内容上区域 进度条背景色 */
+	
+	#details .bg-c5c5c5 {
+	    background-color: #c5c5c5;
+	}
+	/* 内容上区域 进度条宽高 */
+	
+	#details .table tr>td>div:last-child {
+	    height: 8;
+	    width: 96px;
+	}
+	/* 内容上区域 排行榜小图标宽高 */
+	
+	#details .up_img {
+	    width: 6px;
+	    height: 14px;
+	}
+	/* 内容上区域 排行榜大字 */
+	
+	#details table tr>td>.mx-3>div:first-child {
+	    font-size: 14px;
+	}
+	/* 内容上区域 排行榜小字 */
+	
+	#details table tr>td>.mx-3>div:last-child {
+	    font-size: 10px;
+	    padding: 2px;
+	}
+	/* 内容上区域 排行榜红色大字 */
+	
+	#details div #rank_red {
+	    color: #e16868;
+	}
+	/* 内容上区域 排行榜灰色大字 */
+	
+	#details div #rank_grey {
+	    color: #999;
+	}
+	/* 内容上区域 排行榜上升字体样式 */
+	
+	#details div #rank_up {
+	    color: #c64a4d;
+	}
+	/* 内容上区域 排行榜上升icon样式 */
+	
+	#details div #rank_up>span {
+	    background: url(../img/zhubo/ia_200000147.png) no-repeat -68px -274px;
+	    background-size: 1300%;
+	}
+	/* 内容上区域 排行榜新上榜icon样式 */
+	
+	#details div #rank_new>span {
+	    width: 16px;
+	    height: 17px;
+	    background: url(../img/zhubo/ia_200000147.png) no-repeat -63px -265px;
+	    background-size: 500%;
+	    color: #b1b1b1;
+	}
+	/* 内容上区域 排行榜下降字体样式 */
+	
+	#details div #rank_down {
+	    color: #4abbeb;
+	}
+	/* 内容上区域 排行榜下降icon样式 */
+	
+	#details div #rank_down>span {
+	    background: url(../img/zhubo/ia_200000147.png) no-repeat -68px -292px;
+	    background-size: 1300%;
+	}
+	/* 内容上区域 排行榜平等字体样式 */
+	
+	#details div #rank_equal {
+	    color: #b1b1b1;
+	}
+	/* 内容上区域 排行榜平等icon样式 */
+	
+	#details div #rank_equal>span {
+	    background: url(../img/zhubo/ia_200000147.png) no-repeat -68px -246px;
+	    background-size: 1300%;
+	    color: #b1b1b1;
+	}
+	/*红色2.5px实线下边框 */
+	
+	.border-btm {
+	    border-bottom: 2.5px solid #c20c0c;
+	}
+	/* 内容下a标签文字悬浮后下划线，颜色#000 */
+	
+	#middle_bottom .font_18:hover {
+	    color: #000000;
+	    text-decoration: underline;
+	}
+	/* 自定义宽度424px */
+	
+	.w-424 {
+	    width: 424px;
+	}
+	/* 自定义宽度250px */
+	
+	.w-250 {
+	    width: 250px;
+	}
+	/* 自定义宽度120px */
+	
+	.w-120 {
+	    width: 120px;
+	}
+	/* 自定义宽40% */
+	
+	.w-40 {
+	    width: 40%;
+	}
+	/* 自定义宽38% */
+	
+	.w-38 {
+	    width: 38%;
+	}
+	/* 自定义宽35% */
+	
+	.w-35 {
+	    width: 35%;
+	}
+	/* 自定义宽34% */
+	
+	.w-34 {
+	    width: 34%;
+	}
+	/* 自定义宽30% */
+	
+	.w-30 {
+	    width: 30%;
+	}
+	/* 自定义边框1px solid #999 */
+	
+	.border-999 {
+	    border: 1px solid #999 !important;
+	}
+	/* 小字字体颜色 */
+	
+	.small_font {
+	    color: #666 !important;
+	}
+	/* 12号字体#999色上内边距18px*/
+	
+	.font_12 {
+	    color: #999;
+	    font-size: 12px;
+	    padding-top: 18px;
+	}
+	/* 18号字体黑色加粗 */
+	
+	.font_18 {
+	    font-size: 18px;
+	    color: #333;
+	    font-weight: bold;
+	}
+	/* 去除a标签hover下划线 */
+	
+	a:hover {
+	    text-decoration: none;
+	}

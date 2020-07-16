@@ -1,0 +1,766 @@
+<!--
+ * @Author: 邱浚洁
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 我的音乐
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的音乐-邱浚洁</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> <script src="js/jquery.min.js"></script> <script src="js/popper.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/comm.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/my_music.css" /> 
+    </head>
+
+    <body>
+        <iframe src="head.html" width="100%" height="105px" scrolling="no" frameborder="0"></iframe>
+        <div class="container">
+			<div class="row no-gutters border border_color">
+				<!-- 左页面 -->
+				<div class="col-md-3 col-sm-12 border border_color">
+					<div class="my_height list-unstyled">
+						<ul class="list-group my_font mt-5">
+							<li class="list-group-item border-0 my_li my_bg pt-2 pb-2 activeMenu" onclick="changeColor(this,0);showGS('gs') ">
+								<a class="text-dark font-weight-bold pt-1 pb-1 menu_a my_cursor" style="margin-left: 20px;">
+									我的歌手（3）
+								</a>
+							</li>
+
+							<li class="list-group-item  border-0 my_li my_bg" onclick="changeColor(this,1)">
+								<a class="text-dark font-weight-bold menu_a my_cursor">
+									<div class="down"></div>
+									创建我的歌单<img class="r_size" src="img/my_music/rlogo.png" > 
+									(1)
+								</a>
+							</li>
+
+							<li class="gd1 xq" onclick="changeColor(this,0);showGS('gs1')">
+								<div class="">
+									<div class="media">
+										<div class="media-body">
+											<img class="float-left mr-2" src="img/my_music/gedan_small.png" >
+											<div>
+												<a class="my_cursor text-dark no_" href="#">我喜欢的音乐</a><br>
+											</div>
+											<div>
+												<a class="my_cursor no_" style="color: #999;">26首</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="list-group-item  border-0 my_li my_bg" onclick="changeColor(this,2)">
+								<a class="text-dark font-weight-bold menu_a my_cursor">
+									<div class="down"></div>
+									收藏的歌单<img class="r_size" src="img/my_music/rlogo.png" > 
+									(2)
+								</a>
+							</li>
+
+							<li class="gd2 xq" onclick="changeColor(this,0);showGS('gs2')">
+								<div class="media">
+									<div class="media-body">
+										<img class="float-left mr-2" src="img/my_music/gedan_small2.jpg" >
+										<div>
+											<a class="my_cursor text-dark no_" href="#">灰一很方喜欢的音乐</a><br>
+										</div>
+										<div>
+											<a class="my_cursor no_" style="color: #999;">26首 by 灰一很方</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gd2 xq" onclick="changeColor(this,0);showGS('gs3')">
+								<div class="media">
+									<div class="media-body">
+										<img class="float-left mr-2" src="img/my_music/gedan_small3.jpg" >
+										<div>
+											<a class="my_cursor text-dark no_" href="#">树莓小雪糕</a><br>
+										</div>
+										<div>
+											<a class="my_cursor no_" style="color: #999;">26首 by 树莓小雪糕</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-9 col-sm-12 border border_color">
+					<div class="my_height">
+						<!-- 我的歌手   -->
+						<div class="gs hidden pd-40 activeShow">
+							<div class="title">
+								我的歌手（3）
+							</div>
+							<div class="media">
+								<a class="media-left media-middle">
+									<img src="img/my_music/star1.png" alt="">
+								</a>
+								<div class="media-body">
+									<h6 class="media-heading">
+										<a class="text-dark font-weight-bold" href="#">BLACKPINK </a>
+										<span class="small_font">블랙핑크</span> 
+									</h6>
+									<p>
+										16个专辑 203个mv
+									</p>
+								</div>
+							</div>
+							<div class="media">
+								<a class="media-left media-middle">
+									<img src="img/my_music/star2.png" alt="">
+								</a>
+								<div class="media-body">
+									<h6 class="media-heading">
+										<a class="text-dark font-weight-bold" href="#">毛不易</a>
+									</h6>
+									<p>
+										22个专辑 51个mv
+									</p>
+								</div>
+							</div>
+							<div class="media">
+								<a class="media-left media-middle">
+									<img src="img/my_music/star3.png" alt="">
+								</a>
+								<div class="media-body">
+									<h6 class="media-heading">
+										<a class="text-dark font-weight-bold" href="#">网易音乐</a>
+									</h6>
+									<p>
+										13个专辑 51个mv
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="gd gs1 hidden ">
+							<div class="pd-40 media">
+								<a class="media-left media-middle border border-muted p-1 ">
+									<img src="img/my_music/gedan.png" alt="">
+								</a>
+								<div class="media-body ml-2">
+									<h2 class="media-heading">
+										<span class="icon_4"></span>
+										我喜欢的音乐
+									</h2>
+									<div class="touxiang mt-3">
+										<div class="media">
+											<a class="media-left media-middle">
+												<img src="img/my_music/touxiang.jpg" alt="">
+											</a>
+											<div class="media-body">
+												<a href="#">南柠檬皮卡丘</a> <span>2020-07-03 创建</span>
+											</div>
+										</div>
+									</div>
+									<div class="mt-4">
+										<a href="#" class="icon_5_1">
+											<div class="font_ply text-white f_14">播放</div>
+										</a>
+										<a class="icon_5_2" href="#"></a>
+										
+										<a class="ml-1 icon_5_3" href="#">
+											<div class="font_ply2 text-muted f_14">收藏</div>
+										</a>
+										<a class="icon_5_4" href="#"></a>
+										
+										<a class="ml-1 icon_5_5" href="#">
+											<div class="font_ply2 f_14 font_333">分享</div>
+										</a>
+										<a class="icon_5_6" href="#"></a>
+										
+										<a class="ml-1 icon_5_7" href="#">
+											<div class="font_ply2 f_14 font_333">下载</div>
+										</a>
+										<a class="icon_5_8" href="#"></a>
+										
+										<a class="ml-1 icon_5_9" href="#">
+											<div class="font_ply2 f_14 font_333">评论</div>
+										</a>
+										<a class="icon_5_10" href="#"></a>
+									</div>
+									<!-- <div class="btns">
+										<button class="btn1">播放</button>  
+										<button class="btn2">+</button>
+										<button class="btn3">收藏</button>
+										<button class="btn4">分享</button>
+										<button class="btn5">下载</button>
+										<button class="btn6">评论</button>
+									</div> -->
+								</div>
+							</div>
+							<div class="xtitle">
+								<div class="row">
+									<div class="col-10">
+										<span class="fontSize26">歌曲列表</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>26首歌</span>
+									</div>
+									<div class="col-2 num">
+										<span>播放：<a href="#" class="fontRed font-weight-bold">2</a>次</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="mt-1">
+								<table class="table table-striped table-hover ">
+									<thead class="table-bordered">
+										<tr>
+											<th class="w-10"></th>
+											<th class="w-40">歌曲标题</th>
+											<th class="w-15">时长</th>
+											<th class="w-15">歌手</th>
+											<th class="w-20">专辑</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">1</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td><a href="#" class="text-dark">旅行中忘记（Cover 袁娅维）</a></td>
+											<td>04:06</td>
+											<td>宇西</td>
+											<td>旅行中忘记（Cover）</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">2</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>Колыбельная тишины (Из к/ф "Он - дракон")...</td>
+											<td>04:19</td>
+											<td>Zhenya Lubich</td>
+											<td>Колыбельная тишин...</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">3</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>摄影艺术</td>
+											<td>04:27</td>
+											<td>许嵩</td>
+											<td>青年晚报</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">4</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>明智之举</td>
+											<td>04:27</td>
+											<td>许嵩</td>
+											<td>寻宝游戏</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">5</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>如约而至</td>
+											<td>04:15</td>
+											<td>许嵩</td>
+											<td>寻宝游戏</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">6</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>羡慕</td>
+											<td>04:57</td>
+											<td>许嵩</td>
+											<td>羡慕</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">7</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>最佳歌手</td>
+											<td>04:27</td>
+											<td>许嵩</td>
+											<td>青年晚报</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">8</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>幻听</td>
+											<td>04:33</td>
+											<td>许嵩</td>
+											<td>梦游记</td>
+										</tr>
+
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="gd gs2 hidden">
+							<div class="pd-40 media">
+								<a class="media-left media-middle border border-muted p-1 ">
+									<img src="img/my_music/gedan2.png" alt="">
+								</a>
+								<div class="media-body ml-2">
+									<h2 class="media-heading">
+										<span class="icon_4"></span>
+										灰一很方喜欢的音乐
+									</h2>
+									<div class="touxiang">
+										<div class="media">
+											<a class="media-left media-middle">
+												<img src="img/my_music/touxiang2.png" alt="">
+											</a>
+											<div class="media-body">
+												<a>灰一很方</a> <span>2017-05-26  创建</span>
+											</div>
+										</div>
+									</div>
+									<div class="mt-4">
+										<a href="#" class="icon_5_1">
+											<div class="font_ply text-white f_14">播放</div>
+										</a>
+										<a class="icon_5_2" href="#"></a>
+										
+										<a class="ml-1 icon_5_3" href="#">
+											<div class="font_ply2 text-muted f_14">收藏</div>
+										</a>
+										<a class="icon_5_4" href="#"></a>
+										
+										<a class="ml-1 icon_5_5" href="#">
+											<div class="font_ply2 f_14 font_333">分享</div>
+										</a>
+										<a class="icon_5_6" href="#"></a>
+										
+										<a class="ml-1 icon_5_7" href="#">
+											<div class="font_ply2 f_14 font_333">下载</div>
+										</a>
+										<a class="icon_5_8" href="#"></a>
+										
+										<a class="ml-1 icon_5_9" href="#">
+											<div class="font_ply2 f_14 font_333">评论</div>
+										</a>
+										<a class="icon_5_10" href="#"></a>
+									</div>
+									<!-- <div class="btns">
+										<button class="btn1">播放</button>  
+										<button class="btn2">+</button>
+										<button class="btn3">收藏</button>
+										<button class="btn4">分享</button>
+										<button class="btn5">下载</button>
+										<button class="btn6">评论</button>
+									</div> -->
+								</div>
+							</div>
+							<div class="xtitle">
+								<div class="row mb-1">
+									<div class="col-10">
+										<span class="fontSize26">歌曲列表</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>207首歌</span>
+									</div>
+									<div class="col-2 num">
+										<span>播放：<a href="#" class="fontRed font-weight-bold">2749</a>次</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<table class="table table-striped table-hover ">
+									<thead class="table-bordered">
+										<tr>
+											<th class="w-10"></th>
+											<th class="w-40">歌曲标题</th>
+											<th class="w-15">时长</th>
+											<th class="w-15">歌手</th>
+											<th class="w-20">专辑</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">1</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>bad guy</td>
+											<td>03:14</td>
+											<td>Billie Eilesh</td>
+											<td>WHEN WE ALL fall..</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">2</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>Senorita</td>
+											<td>03:11</td>
+											<td>Shawn Mend</td>
+											<td>Senorita</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">3</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>日落大道</td>
+											<td>04:27</td>
+											<td>梁博</td>
+											<td>迷藏</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">4</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>烟雨扬州</td>
+											<td>02:50</td>
+											<td>李树</td>
+											<td>感动的心</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">5</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>胡广生</td>
+											<td>03:09</td>
+											<td>任素汐</td>
+											<td>胡广生</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">6</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>无名之辈</td>
+											<td>04:57</td>
+											<td>汪苏泷</td>
+											<td>无名之辈</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">7</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>你曾是少年</td>
+											<td>04:27</td>
+											<td>S~H~E</td>
+											<td>你曾是少年</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">8</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>像我这样的人</td>
+											<td>04:33</td>
+											<td>平凡的一天</td>
+											<td>像我这样的人</td>
+										</tr>
+
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="gd gs3 hidden">
+							<div class="pd-40 media">
+								<a class="media-left media-middle border border-muted p-1 ">
+									<img src="img/my_music/gedan3.png" alt="">
+								</a>
+								<div class="media-body ml-2">
+									<h2 class="media-heading">
+										<span class="icon_4"></span>
+										【复习 论文 码字 代码 刷题】静心音乐
+									</h2>
+									<div class="touxiang">
+										<div class="media">
+											<a class="media-left media-middle">
+												<img src="img/my_music/touxiang3.png" alt="">
+											</a>
+											<div class="media-body">
+												<a>树莓小雪糕</a> <span>2017-12-22 创建</span>
+											</div>
+										</div>
+									</div>
+									<div class="mt-4 clearfix">
+										<a href="#" class="icon_5_1">
+											<div class="font_ply text-white f_14">播放</div>
+										</a>
+										<a class="icon_5_2" href="#"></a>
+										
+										<a class="ml-1 icon_5_3" href="#">
+											<div class="font_ply2 text-muted f_14">58万</div>
+										</a>
+										<a class="icon_5_4" href="#"></a>
+										
+										<a class="ml-1 icon_5_5" href="#">
+											<div class="font_ply2 f_14 font_333">6244</div>
+										</a>
+										<a class="icon_5_6" href="#"></a>
+										
+										<a class="ml-1 icon_5_7" href="#">
+											<div class="font_ply2 f_14 font_333">下载</div>
+										</a>
+										<a class="icon_5_8" href="#"></a>
+										
+										<a class="ml-1 icon_5_9" href="#">
+											<div class="font_ply2 f_14 font_333">4615</div>
+										</a>
+										<a class="icon_5_10" href="#"></a>
+									</div>
+									<!-- <div class="btns">
+										<button class="btn1">播放</button>  
+										<button class="btn2">+</button>
+										<button class="btn3">收藏</button>
+										<button class="btn4">分享</button>
+										<button class="btn5">下载</button>
+										<button class="btn6">评论</button>
+									</div> -->
+									<div class="mt-3 clearfix">
+										<div class="small_font float-left ">标签：</div>
+										<a class=" btn_muted small_font float-left " href="#">学习</a>
+										<a class=" btn_muted small_font float-left ml-3" href="#">夜晚</a>
+										<a class=" btn_muted small_font float-left ml-3" href="#">午休</a>
+									</div>
+									<div class="small_font text-muted mt-2">
+										介绍：复习静心音乐大全，前半部分是纯音乐，后半部分是轻柔歌曲，觉得太安静了的可以开启随机播放。<br>
+										食用模式：复习，自习，阅读，刷题，码字，司法，医学生，赶图，休息，练字，吟咏，禅定，去浮躁，专注，安静，锦鲤，休息，睡眠，番茄时钟，打卡，午休，画画，手绘，手帐，日记，制图，设计师养生，程序员防脱发，中考，高考，考研，公招，公务员，教师资格证，四六级，专八，雅思，托福写作，写诗，配乐，剪辑，冥想，安神，leetcode，timing，forest，deadline。
+									</div>
+								</div>
+							</div>
+							<div class="xtitle mt-5">
+								<div class="row mb-1">
+									<div class="col-10 ">
+										<span class="fontSize26">歌曲列表</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>960首歌</span>
+									</div>
+									<div class="col-2 num">
+										<span>播放：<a href="#" class="fontRed font-weight-bold">19167720</a>次</span>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<table class="table table-striped table-hover ">
+									<thead class="table-bordered">
+										<tr>
+											<th class="w-10"></th>
+											<th class="w-40">歌曲标题</th>
+											<th class="w-15">时长</th>
+											<th class="w-15">歌手</th>
+											<th class="w-20">专辑</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">1</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>A Quiet Departure</td>
+											<td>03:45</td>
+											<td>Josh Leake</td>
+											<td>Benjamin</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">2</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>再会</td>
+											<td>03:19</td>
+											<td>周涵</td>
+											<td>再会</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">3</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>七夕</td>
+											<td>03:12</td>
+											<td>GIN</td>
+											<td>PASTORAL</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">4</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>青石巷</td>
+											<td>04:27</td>
+											<td>魏琼霏</td>
+											<td>Wei</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">5</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>再见，地球</td>
+											<td>03:15</td>
+											<td>鲸鱼马戏团</td>
+											<td>鲸鱼马戏团VOL.1</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">6</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>有何不可</td>
+											<td>04:57</td>
+											<td>许嵩</td>
+											<td>自定义</td>
+										</tr>
+
+										<tr>
+											<td class="row no-gutters">
+												<span class="col-6">7</span>
+												<div class="col-6">
+													<a href="#" class="icon_6"></a>
+												</div>
+											</td>
+											<td>Henry</td>
+											<td>04:27</td>
+											<td>Nanofingers</td>
+											<td>get off a bus ride...</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+    <script>
+        //activeObj表示点击的li标签
+        function changeColor(activeObj, type) {
+            //obj  之前选中的class
+            var obj = document.getElementsByClassName('activeMenu')[0];
+            //删除activeMenu
+            obj.classList.remove("activeMenu");
+            //添加activeMenu
+            activeObj.classList.add("activeMenu");
+            //判断点击的是那个三角形  然后切换方向
+            if (type) { //type不等于0
+                var objRight = activeObj.getElementsByClassName('right');
+                if (objRight.length > 0) {
+                    objRight[0].classList.remove("right");
+                } else {
+                    activeObj.getElementsByClassName('down')[0].classList.add("right")
+                }
+                //显示隐藏歌单
+                var displayType = document.getElementsByClassName('gd' + type)[0].style.display;
+                if (displayType == "none" || displayType == "") {
+                    document.getElementsByClassName('gd' + type)[0].style.display = "block"
+                    if (type == 2) {
+                        document.getElementsByClassName('gd' + type)[1].style.display = "block"
+                    }
+                } else {
+                    document.getElementsByClassName('gd' + type)[0].style.display = "none"
+                    if (type == 2) {
+                        document.getElementsByClassName('gd' + type)[1].style.display = "none"
+                    }
+                }
+
+
+            }
+
+        }
+
+        //显示和隐藏详情页面的内容
+        function showGS(type) {
+            var objHidden = document.getElementsByClassName('activeShow');
+            objHidden[0].classList.remove("activeShow");
+            var objShow = document.getElementsByClassName(type);
+            objShow[0].classList.add("activeShow");
+        }
+    </script>
+
+</html>

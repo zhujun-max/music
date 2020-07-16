@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+body {
+    min-width: 982px;
+    background: #f5f5f5;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
+.font_small {
+    font-size: 0.875rem;
+}
+
+.font_size {
+    font-size: 0.75rem;
+}
+
+ul>li.media:hover {
+    background: #e8e8e8;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+div.u_icn {
+    width: 13px;
+    height: 13px;
+    background: url(../img/chart/ia_200001148.png) no-repeat;
+    background-position: -18px -682px;
+    margin-top: 3px;
+}
+
+div>.btn1 {
+    width: 3.9rem;
+    height: 23px;
+    background: url(../img/chart/ia_200000109.png) no-repeat;
+    background-position: 0 -603px !important;
+    background-size: 300%;
+}
+
+.btn1>div {
+    line-height: 1.3rem;
+    margin-right: .7rem;
+}
+
+.btn6:hover,
+.btn5:hover,
+.btn4:hover,
+.btn3:hover,
+.btn2:hover,
+.btn1:hover {
+    opacity: 0.8;
+    border-color: #ccc !important;
+}
+
+.btn2 {
+    width: 30px;
+    height: 23px;
+    background: url(../img/chart/ia_200000109.png) no-repeat;
+    background-position: 0px -1297px;
+    background-size: 680%;
+}
+
+.btn3 {
+    width: 91px;
+    height: 24px;
+    border-radius: 3px;
+    background: url(../img/chart/ia_200000109.png);
+    background-position: 0px -833px !important;
+    background-size: 220%;
+    border: 1px solid #dee2e6;
+    line-height: 20px;
+}
+
+.btn4 {
+    width: 70px;
+    height: 24px;
+    border-radius: 3px;
+    background: url(../img/chart/ia_200000109.png);
+    background-position: 0px -1001px !important;
+    background-size: 300%;
+    border: 1px solid #dee2e6;
+    line-height: 20px;
+}
+
+.btn5 {
+    width: 56px;
+    height: 24px;
+    border-radius: 3px;
+    background: url(../img/chart/ia_200000109.png);
+    background-position: 0px -921px !important;
+    background-size: 400%;
+    border: 1px solid #dee2e6;
+    line-height: 20px;
+}
+
+.btn6 {
+    width: 83px;
+    height: 24px;
+    border-radius: 3px;
+    background: url(../img/chart/ia_200000109.png);
+    background-position: 0px -1271px !important;
+    background-size: 260%;
+    border: 1px solid #dee2e6;
+    line-height: 20px;
+}
+
+.my_border {
+    border-top: 2px solid #f00 !important;
+}
+
+.b_border {
+    border-bottom: 2px solid #f00 !important;
+}
+
+.my_b {
+    border-bottom: 1px solid #ccc !important;
+}
+
+div table.table tr.th_height {
+    height: 38px;
+    background: url(../img/chart/ia_200000109.png);
+    background-position: -3px -402px !important;
+    background-size: 90%;
+}
+
+div table.table tr>th:first-child {
+    width: 77.6px;
+}
+
+div table.table tr>th:nth-child(2) {
+    width: 327.2px;
+}
+
+div table.table tr>th:nth-child(3) {
+    width: 90.4px;
+}
+
+div table.table tr>th:last-child {
+    width: 173.6px;
+}
+
+div table.table tr>td:first-child {
+    width: 90px;
+}
+
+div table.table tr>td:nth-child(2) {
+    width: 350px;
+}
+
+div table.table tr>td:nth-child(3) {
+    width: 100px;
+}
+
+div table.table tr>td:last-child {
+    width: 193px;
+}
+
+
+/* 固定表格 */
+
+table {
+    table-layout: fixed;
+}
+
+td>.my_style_1_1 {
+    width: 1.5rem;
+    height: 17px;
+    background: url(../img/chart/ia_200001148.png);
+    background-position: -62px -288px;
+    background-size: 360%;
+}
+
+td>.my_bgcolor_1 {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../img/chart/ia_200001148.png) no-repeat;
+    background-position: -45px -635px;
+    background-size: 500%;
+}
+
+.my_ellipsis {
+    width: 90px;
+}
+
+td>.my_bgcolor_2 {
+    width: 23px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../img/chart/ia_200001134.png) no-repeat;
+    background-position: 0px -126px;
+    background-size: 440%;
+}
+
+.my_bgcolor_3 {
+    width: 50px;
+}
+
+textarea.u_txt {
+    display: block;
+    width: 675px;
+    height: 63px;
+    box-sizing: content-box;
+    overflow: auto;
+    border-color: #ccc;
+    outline: 0;
+    border-radius: .15rem;
+    resize: none;
+    overflow: auto;
+}
+
+.my_bgcolor_7,
+div.my_bgcolor_4,
+div.my_bgcolor_5 {
+    width: 20px;
+    height: 20px;
+    background: url(../img/chart/ia_200001148.png) no-repeat;
+}
+
+div.my_bgcolor_4 {
+    background-position: -45px -554px;
+    background-size: 480%;
+}
+
+div.my_bgcolor_5 {
+    background-position: -67px -554px;
+    background-size: 480%;
+}
+
+div.my_width {
+    width: 100% !important;
+}
+
+.my_bgcolor_6 {
+    width: 15px;
+    height: 14px;
+    background: url(../img/chart/ia_200001148.png) no-repeat;
+    background-position: -30px -597px;
+    cursor: pointer;
+    background-size: 500%;
+}
+
+.border_bottom {
+    border-bottom: 1px #ccc dotted;
+}
+
+img.my_fixed {
+    height: 50px;
+}
+
+div.bg_color {
+    background-color: #F5F5F5;
+    border-radius: .2rem;
+}
+
+.page-item .page-link {
+    border-radius: .25rem;
+    background: transparent;
+    border-color: #ccc;
+    margin-left: 4px;
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    border-color: #ccc;
+    background-color: #f00;
+}
+
+.page-item .page-link:hover {
+    opacity: .8;
+    border-color: #666;
+}
+
+div#top {
+    width: 50px;
+    height: 44px;
+    position: fixed;
+    top: 70%;
+    left: 93%;
+    background-color: #e8e8e8;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+#top:hover {
+    opacity: .8;
+    border-color: #666;
+}
+
+#top .my_bgcolor_7 {
+    background-position: -48px -580px !important;
+    background-size: 480%;
+}

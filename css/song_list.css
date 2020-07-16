@@ -1,0 +1,344 @@
+.carousel-indicators li{
+	width: 10px;height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 2%;
+}
+.carousel-indicators .active {
+		background-color: #f00;
+}
+.carousel-control-prev,
+.carousel-control-next{
+		width:4%;height: 20%;
+		background-color: #aaa;
+		border-radius: 0.25rem;
+		top:40%;
+	}
+	#d2{height: 100px;background-color: #000000;}
+	.f1{
+		/* border-bottom:2px solid red ; */
+		background-image: url();
+		background-repeat: no-repeat;
+		background-position: -230px -150px;
+		background-size: 50%;
+	}
+	.f2{
+		border-bottom: 2px solid red;
+	}
+	.f3{
+		padding-right: 6%;
+	}
+	.ustyle{
+		border-bottom: 2px solid red;
+	}
+	.myfont{
+		font-size:20px ;
+		margin-top:20px ;
+	}
+	.breadcrumb{
+		background-color: #F5F5F5;
+	}
+	.breadcrumb-item+.breadcrumb-item::before{
+		content: "丨";
+	}
+	.nav_font_color{
+		color: #ccc;
+	}
+	.font_small{
+		font-size: 12px;
+	}
+	.myheight{
+		height: 235px;
+	}
+	.mybg{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/8.jpg);
+		cursor: pointer;
+	}
+	.mybg1{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/02.jpg);
+		cursor: pointer;
+	}
+	.mybg2{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/2.jpg);
+		cursor: pointer;
+	}
+	.mybg3{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/4.jpg);
+		cursor: pointer;
+	}
+	.mybg4{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/7.jpg);
+		cursor: pointer;
+	}
+	.mybg5{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/9.jpg);
+		cursor: pointer;
+	}
+	.mybg6{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/10.jpg);
+		cursor: pointer;
+	}
+	.mybg7{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/11.jpg);
+		cursor: pointer;
+	}
+	.mybg8{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/12.jpg);
+		cursor: pointer;
+	}
+	.mybg9{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/13.jpg);
+		cursor: pointer;
+	}
+	.mybg10{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/14.jpg);
+		cursor: pointer;
+	}
+	.mybg11{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/15.jpg);
+		cursor: pointer;
+	}
+	.mybg12{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/16.jpg);
+		cursor: pointer;
+	}
+	.mybg13{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/17.jpg);
+		cursor: pointer;
+	}
+	.mybg14{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/18.png);
+		cursor: pointer;
+	}
+	.mybg15{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/19.jpg);
+		cursor: pointer;
+	}
+	.mybg16{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/20.jpg);
+		cursor: pointer;
+	}
+	.mybg17{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/21.jpg);
+		cursor: pointer;
+	}
+	.mybg18{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/22.jpg);
+		cursor: pointer;
+	}
+	.mybg19{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/23.jpg);
+		cursor: pointer;
+	}
+	.mybg20{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/24.jpg);
+		cursor: pointer;
+	}
+	.mybg21{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/25.jpg);
+		cursor: pointer;
+	}
+	.mybg22{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/26.jpg);
+		cursor: pointer;
+	}
+	.mybg23{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/27.jpg);
+		cursor: pointer;
+	}
+	.mybg24{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/28.jpg);
+		cursor: pointer;
+	}
+	.mybg25{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/29.jpg);
+		cursor: pointer;
+	}
+	.mybg26{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/30.jpg);
+		cursor: pointer;
+	}
+	.mybg27{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/31.jpg);
+		cursor: pointer;
+	}
+	.mybg28{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/32.jpg);
+		cursor: pointer;
+	}
+	.mybg29{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/33.jpg);
+		cursor: pointer;
+	}
+	.mybg30{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/34.jpg);
+		cursor: pointer;
+	}
+	.mybg31{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/35.jpg);
+		cursor: pointer;
+	}
+	.mybg32{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/36.jpg);
+		cursor: pointer;
+	}
+	.mybg33{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/37.jpg);
+		cursor: pointer;
+	}
+	.mybg34{
+		width: 140px;height: 140px;
+		background-image: url(../img/song_list/38.jpg);
+		cursor: pointer;
+	}
+	.myheight a{
+		width: 140px;
+		margin-top: -10px;
+	}
+	
+	.mytop{
+		width: 140px;height: 113px;
+	}
+	.mybottom{
+		width: 140px;height: 27px;
+		background-color: rgba(0,0,0,.5);
+	}
+	.headset{
+		width: 20px;height: 20px;
+		background-image: url(../img/song_list/ia_100000028.png);
+		background-position: 0px -24px;
+		background-size: 785%;
+	}
+	.bottom_font{
+		color: #e8e8e8;
+		margin-top: 2px;
+		margin-left:5px ;
+		font-size: 5px;
+	}
+	.bottom_play{
+		width: 20px;height: 20px;
+		margin-top:2px;
+		margin-left: 45px;
+		background-image: url(../img/song_list/03.png);
+		background-size: 785%;
+		background-position: 0px 0px;
+	}
+	.page-item .page-link{
+			border-radius: .25rem;
+			background: transparent;
+			border-color: #ccc!important;
+			margin-left: 4px;
+		}
+	.page-item.active .page-link{
+		z-index: 2;
+		border-color: #ccc;
+		background-color: #f00!important;
+	} 
+	.page-item .page-link:hover{
+			opacity: .8;
+			border-color: #666;
+		}
+		#top:hover{opacity: .8;border-color: #666;
+			color: red !important;
+		}
+		#top .my_bgcolor_7{
+			background-position: -48px -580px !important;
+			background-size: 480%;
+		}
+		.col-3 {
+		  -webkit-box-flex: 0;
+		  -ms-flex: 0 0 20% !important;
+		  flex: 0 0 20% !important;
+		  max-width: 20% !importants;
+		}
+		.justify_center{
+			justify-content: center;
+		}
+		.btn{
+			width: 46px;
+			font-size: 12px;
+			height: 29px;
+			color: #fff;
+			background-color: #dc3545;
+			border-color: #FFFFFF;
+			margin: auto;
+			margin-right:64px;
+		}
+		#mybtn{
+			width: 91px;height: 31px;
+			font-size: 12px;
+			color: #0056B3;
+			padding-bottom: 5px;
+		}
+		.mybtn2{
+			width: 91px;height: 31px;
+			font-size: 12px;
+		}
+		.myblock{
+			width: 700px;
+			background-color: #FFFFFF;
+			position: absolute;
+			z-index: 10;
+			display: block !important;
+			top:50px ;
+			left: 30px ;
+		}
+		.font_size{
+			font-size: 12px;
+		}
+		.mynone{
+			width: 700px;
+			background-color: #fff;
+			position: absolute;
+			z-index: 10;
+			top:50px ;
+			left: 30px ;
+			display: none !important;	
+			
+		} 
+		.breadcrumb-item + .breadcrumb-item::before{
+			content: "丨";
+			
+		}
+		.mybut{
+			border-radius: 5px;
+			border: 1px solid #C3C3C3;
+		}
+		#mybut:hover{
+			border: 1px solid #C3C3C3;
+		}
+		

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 !important;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.gb-bd {
+    width: 980px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+    border-style: solid;
+    border-color: rgb(211, 211, 211);
+    border-image: initial;
+    border-width: 0px 1px;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.alblist {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+
+.u-title {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid rgb(194, 12, 12);
+}
+
+.cvrlst {
+    margin: 20px 0px 0px 0px;
+}
+
+.u-cover-alb2 {
+    width: 130px;
+    height: 130px;
+}
+
+.u-cover {
+    position: relative;
+    display: block;
+}
+
+.u-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.m-cvrlst li .dec {
+    font-size: 14px;
+    margin: 8px 0px 3px;
+}
+
+.m-cvrlst li p {
+    width: 100%;
+}
+
+.m-cvrlst li p {
+    width: 100%;
+}
+
+.m-cvrlst li .nm {
+    display: inline-block;
+    max-width: 85%;
+    vertical-align: middle;
+}
+
+.s-fc3,
+a.s-fc3:hover {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+.s-fc0,
+a.s-fc0:hover {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.cvrlst li {
+    padding: 0px 0px 30px 0px;
+}
+
+.u-cover-alb2 .msk {
+    width: 153px;
+    height: 130px;
+    background-position: 0 -845px;
+}
+
+.u-cover .msk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.u-cover .bottom,
+.u-cover .msk,
+.n-musicsd .lst .avatar .msk {
+    background: url(../img/zhuzhu/zhuzhu_09.png) no-repeat;
+}
+
+.u-cover-alb2 .msk {
+    width: 153px;
+    height: 130px;
+    background-position: 0 -845px;
+}
+
+.u-title .tab {
+    float: left;
+    margin: 12px 0 0 20px;
+}
+
+.u-title .tab a {
+    color: #666;
+}
+
+.u-title .tab .line {
+    margin: 0 10px;
+    color: #c7c7c7;
+}
+
+.u-title>h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.u-title .tab {
+    float: left;
+    margin: 7px 0 0 20px;
+}
+
+/* 分页栏 */
+div.u-page {
+    margin: 20px 0;
+    text-align: center;
+}
+
+div.u-page a.zprv.js-disabled,
+div.u-page a.zprv {
+    background-position: 0 -620px;
+    color: #cacaca;
+    cursor: default;
+    text-align: center;
+}
+
+div.u-page .zpgi {
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+}
+
+div.u-page .zbtn,
+div.u-page .zpgi {
+    margin: 0 1px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+div.u-page .znxt {
+    width: 57px;
+    padding-left: 12px;
+    background-position: -75px -560px;
+}
+
+div.u-page .zbtn {
+    width: 69px;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    padding: 0;
+}
+
+.u-page>a {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+.zbtn {
+    background-color: rgb(227, 227, 227);
+    color: #000 !important;
+}
+
+.zpgi:hover {
+    border: 1px solid #000 !important;
+}
+
+.icon-play {
+    display: none;
+    left: 94px;
+    width: 28px;
+    height: 28px;
+    background-position: 0 -140px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background: url(../img/zhuzhu/zhuzhu_10.png) no-repeat;
+    background-position: 0px -141px;
+}
+
+.u-cover:hover .icon-play {
+    display: block;
+}

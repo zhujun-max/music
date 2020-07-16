@@ -1,0 +1,877 @@
+<!--
+ * @Author: 侯磊
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 主播电台页面
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主播电台-侯磊</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/zhubo.css" />
+</head>
+
+<body>
+    <iframe src="head.html" width="100%" height="105px" frameborder="0"></iframe>
+    <div class="container-fluid bg-big">
+        <!-- 主体 -->
+        <div id="parent" class="border border-secondary bg-white">
+            <div>
+                <!-- top轮播图 -->
+                <div id="carousel_data" class="carousel mb-4" style="width: 903px;height: 194px;" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- 一层icon -->
+                            <ul class="list-unstyled d-flex justify-content-between d-sm">
+                                <!-- 创作|翻唱 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000045.jpg);"></div>
+                                        <div>创作|翻唱</div>
+                                    </a>
+                                </li>
+                                <!-- 3D|电子 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000047.jpg);"></div>
+                                        <div>3D|电子</div>
+                                    </a>
+                                </li>
+                                <!-- 情感调频 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000049.jpg);"></div>
+                                        <div>情感调频</div>
+                                    </a>
+                                </li>
+                                <!-- 音乐故事 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000051.jpg);"></div>
+                                        <div>音乐故事</div>
+                                    </a>
+                                </li>
+                                <!-- 二次元 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000053.jpg);"></div>
+                                        <div>二次元</div>
+                                    </a>
+                                </li>
+                                <!-- 有声书 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000055.jpg);"></div>
+                                        <div>有声书</div>
+                                    </a>
+                                </li>
+                                <!-- 知识技能 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000057.jpg);"></div>
+                                        <div>知识技能</div>
+                                    </a>
+                                </li>
+                                <!-- 商业财经 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000059.jpg);"></div>
+                                        <div>商业财经</div>
+                                    </a>
+                                </li>
+                                <!-- 人文历史 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000061.jpg);"></div>
+                                        <div>人文历史</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- 二层icon -->
+                            <ul class="list-unstyled d-flex justify-content-between d-sm mt-4">
+                                <!-- 外语世界 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000063.jpg);"></div>
+                                        <div>外语世界</div>
+                                    </a>
+                                </li>
+                                <!-- 亲子宝贝 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000065.jpg);"></div>
+                                        <div>亲子宝贝</div>
+                                    </a>
+                                </li>
+                                <!-- 相声曲艺 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000067.jpg);"></div>
+                                        <div>相声曲艺</div>
+                                    </a>
+                                </li>
+                                <!-- 美文读物 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000069.jpg);"></div>
+                                        <div>美文读物</div>
+                                    </a>
+                                </li>
+                                <!-- 脱口秀 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000071.jpg);"></div>
+                                        <div>脱口秀</div>
+                                    </a>
+                                </li>
+                                <!-- 广播剧 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000073.jpg);"></div>
+                                        <div>广播剧</div>
+                                    </a>
+                                </li>
+                                <!-- 明星做主播 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000075.jpg);"></div>
+                                        <div>明星做主播</div>
+                                    </a>
+                                </li>
+                                <!-- 娱乐|影视 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000077.jpg);"></div>
+                                        <div>娱乐|影视</div>
+                                    </a>
+                                </li>
+                                <!-- 科技科学 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000079.jpg);"></div>
+                                        <div>科技科学</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="carousel-item ">
+                            <!-- 三层icon -->
+                            <ul class="list-unstyled d-flex align-items-lg-start d-sm">
+                                <!-- 校园|教育 -->
+                                <li>
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000081.jpg);"></div>
+                                        <div>校园|教育</div>
+                                    </a>
+                                </li>
+                                <!-- 旅途|城市 -->
+                                <li class="ml-5">
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000083.jpg);"></div>
+                                        <div>旅途|城市</div>
+                                    </a>
+                                </li>
+                                <!-- 常见问题-->
+                                <li class="ml-5">
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000085.png);"></div>
+                                        <div>常见问题</div>
+                                    </a>
+                                </li>
+                                <!-- 我要做主播 -->
+                                <li class="ml-5">
+                                    <a href="#">
+                                        <div class="icon" style="background: url(./img/zhubo/ia_200000087.png);"></div>
+                                        <div>我要做主播</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel_data"></li>
+                        <li data-slide-to="1" data-target="#carousel_data"></li>
+                    </ul>
+                    <a href="#carousel_data" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <a href="#carousel_data" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                </div>
+
+                <!-- 内容上 -->
+                <div id="details" class="d-flex list-unstyled">
+
+                    <!-- 左 -->
+                    <div>
+                        <!-- 左标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end mb-2 w-424">
+                            <a href="#">
+                                <div class="h4 m-0">推荐节目</div>
+                            </a>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 左内容 -->
+                        <table class="table table-striped table-hover w-424">
+                            <!-- 1 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000000.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">黄轩 | 朗读篇目：《杰克逊高地》《从前慢》木心</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">鼓楼西剧场朗读会</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">明星做主播</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 2 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000001.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">张颂文 | 朗读篇目：《一个断了食指的人》申赋渔</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">鼓楼西剧场朗读会</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">明星做主播</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 3 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000002.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">EP15 何景扬 阿福 #音乐产业未来与科技趋势发展</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">韦礼安跟你鸟鸟天 Season 01</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted">音乐故事</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 4 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000003.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">ep01. 中国女团出道即巅峰？</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">众口难调电台</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">脱口秀</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 5 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000004.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">偷窥邻居24小时后，我开始怀疑爱情</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">槽值</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">情感调频</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 6 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000005.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">94 演员李梦：路内推荐我读紫金陈，演王瑶参考了江歌案</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">忽左忽右</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">人文历史</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 7 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000006.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">云村有留言2——方言歌里有乾坤</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">在云端</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">音乐故事</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 8 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000007.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">ep.20丨夏天消暑最好的选择——日式 Jazz Hiphop</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">Vibration 歪波音室</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">音乐故事</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 9 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000008.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">始终学不会告别的我们，才是青春的模样</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">声图Radio</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">情感调频</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 10 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 pl-3  align-items-center">
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000009.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">04 | 音乐是怎样变免费的</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">天方乐谈</a></p>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="#" class="border no_underline px-2 text-muted ">音乐故事</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- 右 -->
+                    <div class="ml-5">
+                        <!-- 右标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end mb-2 w-424">
+                            <a href="#">
+                                <div class="h4 m-0">节目排行榜</div>
+                            </a>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 右内容 -->
+                        <table class="table table-striped table-hover w-424">
+                            <!-- 1 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_red">01</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>1
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000010.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">隔岸</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">尘ah的小白罐头⚜</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar w-100 bg-c5c5c5"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 2 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_red">02</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>2
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000012.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">下落不明</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">网瘾少女叽</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar w-50 bg-c5c5c5"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 3 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2   align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_red">03</div>
+                                        <div id="rank_new" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000011.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">你走</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">小李的故事</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar w-50 bg-c5c5c5"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 4 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2   align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">04</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>21
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000013.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">和你（cover：余佳运）</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">坠.</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-40"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 5 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2   align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">05</div>
+                                        <div id="rank_down" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>2
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000014.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate  mb-0  "><a href="#">我应该去爱你（原唱：汪东城） </a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">Cookie饼干真香</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-40"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 6 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">06</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>3
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000012.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250">
+                                        <p class="m-0 text-truncate mb-0"><a href="#">下落不明</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">网瘾少女叽</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-38"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 7 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">07</div>
+                                        <div id="rank_equal" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>0
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000016.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate mb-0"><a href="#">海底</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">不够的不够</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-38"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 8 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">08</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>3
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000017.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate mb-0"><a href="#">信仰</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">刘大壮</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-35"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 9 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">09</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>1
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000019.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate mb-0"><a href="#">不懂事尾奏</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">一只废柴的哼哼唧唧</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-34"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 10 -->
+                            <tr>
+                                <td class="d-flex p-0 py-2 align-items-center">
+                                    <div class="mx-3">
+                                        <div id="rank_grey">10</div>
+                                        <div id="rank_up" class="d-flex flex-nowrap align-items-center">
+                                            <span class="up_img"></span>6
+
+                                        </div>
+                                    </div>
+                                    <div class="dingwei_1">
+                                        <div class="my_bgimg"></div>
+                                        <img src="./img/zhubo/ia_200000018.jpg">
+                                    </div>
+                                    <div class="ml-2 w-250 ">
+                                        <p class="m-0 text-truncate mb-0"><a href="#">当爱已成往事</a></p>
+                                        <p class="m-0 pt-1"><a href="#" class="small_font">张芸</a></p>
+                                    </div>
+                                    <div class="progress w-25 mr-3">
+                                        <div class="progress-bar bg-c5c5c5 w-30"></div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- 内容下 -->
+                <div id="middle_bottom" class="mt-4">
+                    <!-- 1 -->
+                    <div class="pb-4">
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end  border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">音乐故事</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000020.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">Yo你Yo我</a></div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000021.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">星池电台</a></div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000022.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">星阑夜话</a></div>
+                            </div>
+                            <div class="col-5 media   py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000023.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">拾玖青年电台 — 考研知一二</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="pb-4">
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end mb-2 border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">美文读物</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000024.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">孤独的小孩爱听故事📝</a></div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000025.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">罗洋的秘制鸡汤</a>
+                                    <p class="font_12">用真实为你烹制生活中的感动</p>
+                                </div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000026.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">原谅我眼里满是人间烟火。</a>
+                                    <p class="font_12">给你的耳朵讲故事</p>
+                                </div>
+                            </div>
+                            <div class="col-5 media   py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000027.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">洞见官方播客</a>
+                                    <p class="font_12">不是每一种观点，都可以叫洞见</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="pb-4">
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end mb-2 border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">脱口秀</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000028.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">听涛轩</a>
+                                    <p class="font_12">梳理热点时事，数尽风流人物</p>
+                                </div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000029.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">人间指南官方电台</a>
+                                    <p class="font_12">话题不设限，畅谈人世间</p>
+                                </div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000030.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">跑火车脱口秀</a>
+                                </div>
+                            </div>
+                            <div class="col-5 media   py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000031.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">Nice Try</a>
+                                    <p class="font_12">这是一个每周更新的人生挑战节目</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="pb-4">
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end  border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">情感调频</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000032.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">心理学小课堂</a></div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000033.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">米甜の情感电台</a></div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000034.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">南一酒馆</a>
+                                    <p class="font_12">我等风，等温柔，也等你张开双手</p>
+                                </div>
+                            </div>
+                            <div class="col-5 media   py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000035.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">星河不及你</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="pb-4">
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end  border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">创作|翻唱</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000036.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">自然的弹唱小屋</a></div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000037.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">治愈系钢琴弹唱</a>
+                                    <p class="font_12">甜美歌声，治愈系钢琴弹唱</p>
+                                </div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000038.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">一栋人间烟火.</a>
+                                </div>
+                            </div>
+                            <div class="col-5 media   py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000039.jpg"></a>
+                                <div class="media-body ml-4 mt-3"><a href="#" class="font_18">私人博物馆</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div>
+                        <!-- 小标题 -->
+                        <div id="title" class="d-flex justify-content-between align-items-end mb-2 border-btm py-3">
+                            <div class="h4 m-0"><a href="#" class="text-dark">人文历史</a><span class="px-2 font-weight-bold">·</span>电台</div>
+                            <a href="#">
+                                <div class="text-muted small_font">更多></div>
+                            </a>
+                        </div>
+                        <!-- 图标文字内容-->
+                        <div class="row no-gutters">
+                            <div class="col-6 media  border-bottom py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000040.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">坏姐姐编辑部</a>
+                                    <p class="font_12">跟坏姐姐一起精准吐槽</p>
+                                </div>
+                            </div>
+                            <div class="col-5 media  border-bottom py-4 ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000041.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">明清时期的那些人和事儿</a>
+                                    <p class="font_12">通俗趣味的讲解带您“观史识今”</p>
+                                </div>
+                            </div>
+                            <div class="col-6 media   py-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000042.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">名校大师课</a>
+                                    <p class="font_12">1天1节清华人大名师课重塑学习力</p>
+                                </div>
+                            </div>
+                            <div class="col-5 media  py-4  ml-4">
+                                <a href="#"><img class="w-120" src="./img/zhubo/ia_200000043.jpg"></a>
+                                <div class="media-body ml-4 mt-3">
+                                    <a href="#" class="font_18">陈立·山水有相逢</a>
+                                    <p class="font_12">每周1次旅行解读，听见诗与远方</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="foot.html" width="100%" height="175px" frameborder="0"></iframe>
+</body>
+
+</html>

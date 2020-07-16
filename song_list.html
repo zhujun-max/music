@@ -1,0 +1,700 @@
+<!--
+ * @Author: 李宏伟
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 歌单
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>歌单-李宏伟</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/> -->
+	<link rel="stylesheet" type="text/css" href="/css/song_list.css" />
+</head>
+
+<body>
+	<iframe src="head.html" width="100%" height="105px" frameborder="0"></iframe>
+	<div class="container">
+		<!-- body -->
+		<div class="mt-2">
+			<div class="row no-gutters">
+				<div class="col-12 clearfix ">
+					<div class="f1 w-100 d-flex ">
+						<div class=" myfont m-0 pl-3 pt-2">
+							<h4>全部</h4>
+						</div>
+						<div class="dropdown">
+							<!-- <a class="btn-lg btn-dark dropdown-toggle" data-toggle = "dropdown" href="">选择分类</a> -->
+							<button class=" mybut ml-3 mt-2" id="mybtn" onclick="block">选择分类↓</button>
+						</div>
+						<button class=" btn btn-sm" type="button">热门</button>
+
+					</div>
+					<div class="pl-3 f3">
+						<div class="f2"></div>
+					</div>
+					<div class="w-100">
+						<!-- 下拉菜单 -->
+						<div class="mynone" id="mute">
+							<div class="border-bottom col-12">
+								<button type="button" class=" mybut text-dark mybtn2 ml-4 mb-2 mt-2">全部风格</button>
+							</div>
+							<div class="col-2 "></div>
+							<div class="col-10">
+								<div>
+									<ul class="breadcrumb bg-white">
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">华语</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">日语</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">韩语</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">韩语</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">粤语</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div>
+									<ul class="breadcrumb bg-white">
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">流行</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">摇滚</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">民谣</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">电子</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">舞曲</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">说唱</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">轻音乐</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">爵士</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">乡村</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">R&B/Soul</a>
+										</li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">古典</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">民族</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">英伦</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">金属</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">朋克</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">蓝调</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">雷鬼</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">世界音乐</a>
+										</li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">拉丁</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">New Age</a>
+										</li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">古风</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">后摇</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">Bossa
+												Nova</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div>
+									<ul class="breadcrumb bg-white">
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">清晨</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">夜晚</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">学习</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">工作</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">午休</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">下午茶</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">地铁</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">驾车</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">运动</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">旅行</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">散步</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">酒吧</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div>
+									<ul class="breadcrumb bg-white">
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">怀旧</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">清新</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">浪漫</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">伤感</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">治愈</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">放松</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">孤独</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">感动</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">兴奋</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">快乐</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">安静</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">思念</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div>
+									<ul class="breadcrumb bg-white">
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">综艺</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">影视原声</a>
+										</li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">ACG</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">儿童</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">校园</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">游戏</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">70后</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">80后</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">90后</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">网络歌曲</a>
+										</li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">ktv</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">经典</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">翻唱</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">吉他</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">钢琴</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">器乐</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">榜单</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size">00后</a></li>
+										<li class="breadcrumb-item"><a href="" class="text-muted font_size"></a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					var mybtn = document.getElementById("mybtn")
+					mybtn.onclick = function () {
+						var mute = document.getElementById("mute")
+						if (mute.className == "mynone") {
+							mute.className = "myblock"
+						} else {
+							mute.className = "mynone"
+						}
+					}
+				</script>
+				<div class="w-100 row no-gutters">
+					<div class="col-3 myheight ">
+						<div class="mybg m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">5327万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">凯尔特｜令人无限向</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 峯哥牛逼</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg1 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">8755万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">夏雨瓢泼思念成河，...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 司马烟</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg2 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">8888万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">韩语｜山野千里 你...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">嚣张洋娃娃</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg3 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6665万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">叮咚！你有一张星际...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 欧美音乐杂货铺</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg4 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">2357万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">欧美女嗓丨声线控</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1"> You和Basketball</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg5 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7851万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">爱上你我总在学会</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> k二月来的洛瑶</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg6 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6325万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">伤感（片段）</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 网易云音乐 </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg7 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">4567万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">[华语私人订制] 最懂...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">决劣</a>
+					</div>
+
+					<!-- <div class="w-100 row no-gutters"> -->
+					<div class="col-3 myheight">
+						<div class="mybg8 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7854万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">精选|超好听的网络热...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">酥糖今天笑了吗</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg9 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">3527万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">伤感片段|我的快乐...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 爱打篮球的亮亮</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg10 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">2458万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">千里狗/陈阳/王巨星/...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> Dexter_RV</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg11 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">2156万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">黑胶必打卡｜别问 问...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">他终属于人海</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg12 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">4656万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">你现在过的怎样...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">超爱吃火锅的o</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg13 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7823万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">一人血书求完整版</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">他终属于人海</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg14 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6548万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">超好听的高潮翻唱呀</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">我鲁班不坑</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg15 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">3258万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">超好听的翻唱+原唱...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">野猫不乖哦</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg16 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7456万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">仇远旭a的歌单</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">仇远旭a</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg17 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">5435万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">精选｜超好听的翻唱...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">呐彭七岁呐丨</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg18 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6444万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">精选|超好听的网络</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">江辞超nice</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg19 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7844万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">去乘风破浪，毕业仍...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">真爱喝柠檬茶 </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg20 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">8545万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">生活是自己的尽情装</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">大肥猫好可爱哟</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg21 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">3585万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">【民谣】安静的听歌</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">SG丶我叫张坏坏</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg22 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">5894万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">没有人能把努力发光</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">螚安Vivienne </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg23 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">5666万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">私藏推荐 | 30张专辑...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">鱼骨与飞鸟集 </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg24 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7854万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">周末时光｜阳光下的...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">飞奔在夜晚-</a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg25 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">3514万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">•【复古新浪潮——</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">SUNOFLEO- </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg26 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">4654万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">「打不败的女王心」...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">ARMyphoria伊柾 </a>
+					</div>
+					<div class="col-3 myheight">
+						<div class="mybg27 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">9854万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">伤感片段：听完这些...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">阡屿_</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg28 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6544万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">阅读书籍的背景音乐...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">小米渣吖吖</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg29 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">4554万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">『silence』春日出逃...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 欢酹 </a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg30 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7852万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">冷门亦惊艳｜聆听女...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">NeilShine_</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg31 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">5200万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">抖音伤感歌曲//丧...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">半颗番茄xi</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg32 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">7354万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">快手伤感丨四下无人...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">初晨观潮</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg33 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">6521万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">温柔治愈｜快手值得...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted"> 望你眼中风起</a>
+					</div>
+
+					<div class="col-3 myheight">
+						<div class="mybg34 m-3">
+							<div class="mytop"></div>
+							<div class="mybottom d-flex">
+								<span class="headset d-block ml-1"></span>
+								<span class="bottom_font d-flex">8234万</span>
+								<div class="bottom_play"></div>
+							</div>
+						</div>
+						<a href="" class="text-dark font_small d-block ml-3">希望耳机中的音药，...</a>
+						<span class="text-muted font_small ml-3">by</span>
+						<a href="#" class="font_small text-dark ml-1 text-muted">-情殇雨夜-</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<ul class="pagination font_size pt-4 justify-content-center">
+			<li class="page-item disabled">
+				<a href="#" class="page-link text-muted">&lt;上一页</a>
+			</li>
+			<li class="page-item active">
+				<a href="#" class="page-link">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">4</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">5</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">6</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">7</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">8</a>
+			</li>
+			<li class="ml-1">...</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">38</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link text-dark">下一页&gt;</a>
+			</li>
+		</ul>
+	</div>
+	<iframe src="foot.html" width="100%" height="175px" frameborder="0"></iframe>
+</body>
+
+</html>

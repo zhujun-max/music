@@ -1,0 +1,384 @@
+.my_height {
+    height: 833px;
+}
+
+.my_font {
+    font-size: 14px;
+    font-family: simsun, \5b8b\4f53;
+}
+
+
+/* 最外层 */
+
+body {
+    background-color: #ccc;
+    /*#f9f9f9; */
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+
+/* .my_li:hover {
+	background: #eee;
+}
+
+.my_li a:hover {
+	text-decoration: none;
+} */
+
+
+/* 新增 */
+
+.border_color {
+    border: solid #ddd;
+    background-color: #f9f9f9;
+    /* #f5f5f5 */
+}
+
+.menu_a {
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* 表示选中的菜单样式  */
+
+.activeMenu {
+    background-color: #eee !important;
+    font-weight: bold;
+}
+
+.list-group-item {
+    background-color: #f9f9f9;
+}
+
+.right {
+    float: left;
+    width: 20;
+    height: 20;
+    border-width: 10px;
+    margin-top: 5px !important;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #cccccc transparent transparent transparent !important;
+    margin-left: -5px;
+}
+
+.down {
+    float: left;
+    width: 20;
+    height: 20;
+    border-width: 10px;
+    margin-top: 0px;
+    /* margin-right: 5px; */
+    border-style: solid;
+    border-color: transparent transparent transparent #cccccc;
+}
+
+.xq {
+    display: none;
+}
+
+.xq .media {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.xq .media-body {
+    height: 40px;
+}
+
+.xq .media-body div {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.xq {
+    padding-left: 24px;
+}
+
+.fontRed {
+    color: #c20c0c;
+}
+
+.touxiang img {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.touxiang .media-body {
+    height: 35px !important;
+    padding: 3px 0 0 10px !important;
+}
+
+.touxiang .media-body a {
+    color: #0c73c2;
+    font-size: 13px;
+}
+
+.touxiang .media-body span {
+    color: #999;
+    font-size: 12px;
+}
+
+.btns {
+    margin-top: 10px;
+}
+
+.xtitle {
+    padding: 0 10px 0 32px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.xtitle .num {
+    position: relative
+}
+
+.xtitle .num span {
+    position: absolute;
+    bottom: 0;
+}
+
+.fontSize26 {
+    font-size: 26px !important;
+}
+
+.xtitle span {
+    font-size: 12px;
+}
+
+.fontColorRed {
+    color: red !important;
+}
+
+.table {
+    font-weight: normal;
+    color: #333;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pd-40 {
+    padding: 40px;
+}
+
+.activeShow {
+    display: block;
+}
+
+.gs .title {
+    height: 50px;
+    font-size: 24px;
+    border-bottom: 2px solid #c20c0c;
+    margin-bottom: 20px;
+}
+
+.gs .media {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.gs .media img {
+    width: 80px;
+    height: 80px;
+}
+
+.gs .media-body {
+    height: 80px;
+    padding: 15px 0 0 20px;
+}
+
+.gs .media-body p {
+    font-size: 12px;
+}
+
+.gd .media img {
+    width: 208px;
+    height: 208px;
+}
+
+.gd .media-body {
+    height: 80px;
+    padding: 15px 0 0 20px;
+}
+
+.gd .media-body .media-heading {
+    font-size: 20px;
+}
+
+.r_size {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+
+.small_font {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my_cursor {
+    cursor: pointer;
+}
+
+.no_:hover {
+    text-decoration: none;
+}
+
+.icon_4 {
+    display: block;
+    width: 54px;
+    height: 24px;
+    background: url(../img/my_music/icon4.png) no-repeat;
+    background-position: 0 -243px;
+    float: left;
+    margin-right: 4px;
+}
+
+.icon_5_1 {
+    display: block;
+    float: left;
+    width: 66px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -633px;
+}
+
+.font_ply {
+    float: left;
+    margin: 5px 0px 0px 34px;
+    font-size: 12px;
+}
+
+.icon_5_2 {
+    width: 31px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -1588px;
+    float: left;
+}
+
+.font_ply2 {
+    float: left;
+    margin: 5px 0px 0px 29px;
+    font-size: 12px;
+}
+
+.icon_5_3 {
+    width: 60px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -1149px;
+    float: left;
+}
+
+.icon_5_4 {
+    width: 31px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: right -1192px;
+    margin-left: -24px;
+    float: left;
+}
+
+.icon_5_5 {
+    width: 60px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -1225px;
+    float: left;
+}
+
+.icon_5_6 {
+    width: 31px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: right -1020px;
+    margin-left: -26px;
+    float: left;
+}
+
+.font_333 {
+    color: #333333;
+}
+
+.icon_5_7 {
+    width: 60px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -2761px;
+    float: left;
+}
+
+.icon_5_8 {
+    width: 31px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: right -1020px;
+    margin-left: -26px;
+    float: left;
+}
+
+.icon_5_9 {
+    width: 60px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: 0 -1465px;
+    float: left;
+}
+
+.icon_5_10 {
+    width: 31px;
+    height: 31px;
+    background: url(../img/my_music/icon5.png) no-repeat;
+    background-position: right -1020px;
+    margin-left: -26px;
+    float: left;
+}
+
+.icon_6 {
+    width: 17px;
+    height: 17px;
+    background: url(../img/my_music/icon6%20.png) no-repeat;
+    background-position: 0 -103px;
+    float: right;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.btn_muted {
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+    color: #777;
+    background-color: #f3f3f3;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 5px 10px;
+    line-height: 11px;
+    text-align: center;
+}
+
+.btn_muted:hover {
+    color: #777;
+    background-color: #fff;
+    border-color: #f5f5f5;
+    border-radius: 8px;
+    text-decoration: none;
+}

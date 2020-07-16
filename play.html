@@ -1,0 +1,452 @@
+<!--
+ * @Author: 朱俊
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 播放条（没用）
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- 底部栏播放栏 -->
+    <div class="g-btmbar">
+        <div class="m-playbar m-playbar-unlock" style="top: -53px; visibility: visible;" id="auto-id-TINVGaspilJdDmOM">
+            <div class="updn">
+                <div class="left f-fl">
+                    <a href="javascript:;" class="btn" hidefocus="true" data-action="lock"></a>
+                </div>
+                <div class="right f-fl"></div>
+            </div>
+            <div class="bg"></div>
+            <div class="hand" title="展开播放条"></div>
+            <div class="wrap" id="g_player" style="margin-left: -498.5px;">
+                <div class="btns">
+                    <a href="javascript:;" hidefocus="true" data-action="prev" class="prv" title="上一首(ctrl+←)">上一首</a>
+                    <a href="javascript:;" hidefocus="true" data-action="play" class="ply j-flag" title="播放/暂停(p)">播放/暂停</a>
+                    <a href="javascript:;" hidefocus="true" data-action="next" class="nxt" title="下一首(ctrl+→)">下一首</a>
+                </div>
+                <div class="head j-flag"><img src="https://p1.music.126.net/FdutyVQ0oNOvjDHDixrALw==/844424930132282.jpg?param=34y34">
+                    <a href="/song?id=151985" hidefocus="true" class="mask"></a>
+                </div>
+                <div class="play">
+                    <div class="j-flag words"> <a hidefocus="true" href="/song?id=151985" class="f-thide name fc1 f-fl" title="丁香花">丁香花</a>
+                        <a hidefocus="true" href="/mv?id=330023" class="mv f-fl" title="MV"></a><span class="by f-thide f-fl"><span title="唐磊"><a class=""
+                                    href="/artist?id=5206" hidefocus="true">唐磊</a></span></span>
+                    </div>
+                    <div class="m-pbar" data-action="noop">
+                        <div class="barbg j-flag" id="auto-id-P7cODecdmh7MEqpv">
+                            <div class="rdy" style="width: 0px;"></div>
+                            <div class="cur" style="width:0%;"><span class="btn f-tdn f-alpha" id="auto-id-EXsbx8ByPGLCcrce"><i></i></span></div>
+                        </div>
+                        <span class="j-flag time"><em>00:00</em> / 00:00</span>
+                    </div>
+                </div>
+                <div class="oper f-fl">
+                    <a href="javascript:;" hidefocus="true" data-action="like" class="icn icn-add j-flag" title="收藏">收藏</a>
+                    <a href="javascript:;" hidefocus="true" data-action="share" class="icn icn-share" title="分享">分享</a>
+                </div>
+                <div class="ctrl f-fl f-pr j-flag">
+                    <div class="m-vol" style="visibility:hidden;" id="auto-id-RlumDSKq6GBKqKao">
+                        <div class="barbg"></div>
+                        <div class="vbg j-t" id="auto-id-PR9hzJ58fdCTal5t">
+                            <div class="curr j-t" style="height: 74.4px;"></div>
+                            <span class="btn f-alpha j-t" style="top: 16.2px;"></span>
+                        </div>
+                    </div>
+                    <a href="javascript:;" hidefocus="true" data-action="volume" class="icn icn-vol"></a>
+                    <a href="javascript:;" hidefocus="true" data-action="mode" class="icn icn-loop" title="循环"></a>
+                    <span class="add f-pr">
+                        <span class="tip" style="display:none;">已添加到播放列表</span>
+                    <a href="javascript:;" title="播放列表" hidefocus="true" data-action="panel" class="icn icn-list s-fc3">8</a>
+                    </span>
+                    <div class="tip tip-1" style="display:none;">循环</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* 底部播放条 */
+        
+        .g-btmbar {
+            position: fixed;
+            zoom: 1;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            width: 100%;
+            z-index: 1002;
+        }
+        
+        .m-playbar {
+            position: absolute;
+            zoom: 1;
+            top: -53px;
+            left: 0;
+            width: 100%;
+            height: 53px;
+            margin: 0 auto;
+        }
+        /* 需要修改 */
+        
+        element.style {
+            top: -53px;
+            visibility: visible;
+        }
+        
+        .m-playbar .updn {
+            position: relative;
+            z-index: 11;
+        }
+        
+        .m-playbar .updn .left {
+            position: absolute;
+            top: -14px;
+            right: 15px;
+            width: 52px;
+            height: 67px;
+            background-position: 0 -380px;
+        }
+        
+        .m-playbar-lock .updn .btn {
+            background-position: -100px -380px;
+        }
+        
+        .m-playbar .updn .btn {
+            display: block;
+            width: 18px;
+            height: 18px;
+            margin: 6px 0 0 17px;
+        }
+        
+        .m-playbar .updn .left,
+        .m-playbar .updn .right,
+        .m-playbar .updn .btn,
+        .m-playbar .bg,
+        .m-playbar .btns a,
+        .m-playbar .head .mask,
+        .m-playbar .icn,
+        .m-playbar .ctrl,
+        .m-playbar .tip,
+        .m-vol .curr,
+        .m-playbar .words .mv,
+        .m-vol .barbg,
+        .m-playbar .words .src {
+            background: url(../img/zhuzhu/zhuzhu_11.png);
+        }
+        
+        .m-playbar .updn .right {
+            position: absolute;
+            top: -1px;
+            right: 0;
+            width: 15px;
+            height: 54px;
+            background-position: -52px -393px;
+            pointer-events: none;
+        }
+        
+        .m-playbar .bg {
+            height: 53px;
+            zoom: 1;
+            margin-right: 67px;
+            background-position: 0 0;
+            background-repeat: repeat-x;
+        }
+        
+        .m-playbar .hand {
+            position: absolute;
+            top: -10px;
+            width: 100%;
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        .m-playbar .wrap {
+            position: absolute;
+            left: 50%;
+            top: 6px;
+            z-index: 15;
+            width: 980px;
+            height: 47px;
+            margin: 0 auto;
+            margin-left: -490px;
+        }
+        
+        .m-playbar .btns {
+            width: 137px;
+            padding: 6px 0 0 0;
+        }
+        
+        .m-playbar .btns,
+        .m-playbar .head,
+        .m-playbar .play,
+        .m-playbar .volum,
+        .m-playbar .oper {
+            float: left;
+        }
+        
+        .m-playbar .btns .prv {
+            background-position: 0 -130px;
+        }
+        
+        .m-playbar .btns a {
+            display: block;
+            float: left;
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+            margin-top: 5px;
+            text-indent: -9999px;
+        }
+        
+        .m-playbar .btns .ply {
+            width: 36px;
+            height: 36px;
+            margin-top: 0;
+            background-position: 0 -204px;
+        }
+        
+        .m-playbar .btns a {
+            display: block;
+            float: left;
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+            margin-top: 5px;
+            text-indent: -9999px;
+        }
+        
+        .m-playbar .btns .nxt {
+            background-position: -80px -130px;
+        }
+        
+        .m-playbar .head {
+            position: relative;
+            *zoom: 1;
+            margin: 6px 15px 0 0;
+        }
+        
+        .m-playbar .head,
+        .m-playbar .head img {
+            width: 34px;
+            height: 34px;
+        }
+        
+        .m-playbar .head,
+        .m-playbar .head img {
+            width: 34px;
+            height: 34px;
+        }
+        
+        .m-playbar .head .mask {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 34px;
+            height: 35px;
+            background-position: 0 -80px;
+        }
+        
+        .m-playbar .play {
+            position: relative;
+            *zoom: 1;
+            width: 608px;
+        }
+        
+        .m-playbar .words {
+            height: 28px;
+            overflow: hidden;
+            color: #e8e8e8;
+            text-shadow: 0 1px 0 #171717;
+            line-height: 28px;
+        }
+        
+        .m-playbar .words .name {
+            max-width: 300px;
+        }
+        
+        .f-thide {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+        
+        .f-fl {
+            float: left;
+        }
+        
+        .m-playbar .words .mv {
+            width: 19px;
+            height: 17px;
+            margin: 6px 0 0 3px;
+            background-position: 0 -57px;
+        }
+        
+        .m-playbar .words .by {
+            max-width: 220px;
+            margin-left: 15px;
+            color: #9b9b9b;
+        }
+        
+        .f-thide {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+        
+        .m-playbar .words .by a {
+            color: #9b9b9b;
+        }
+        
+        .m-pbar .barbg,
+        .m-pbar .cur,
+        .m-pbar .rdy {
+            height: 9px;
+            background-position: right 0;
+        }
+        
+        .m-pbar,
+        .m-pbar .barbg {
+            width: 493px;
+        }
+        
+        .m-pbar .rdy {
+            background-position: right -30px;
+        }
+        
+        .m-pbar .cur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1%;
+            background-position: left -66px;
+        }
+        
+        .m-pbar .btn {
+            position: absolute;
+            top: -7px;
+            right: -13px;
+            width: 22px;
+            height: 24px;
+            margin-left: -11px;
+            background-position: 0 -250px;
+        }
+        
+        .m-pbar .btn i {
+            visibility: hidden;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .m-pbar .time {
+            position: absolute;
+            top: -3px;
+            right: -84px;
+            color: #797979;
+            text-shadow: 0 1px 0 #121212;
+        }
+        
+        .m-pbar .time em {
+            color: #a1a1a1;
+        }
+        
+        .m-playbar .oper {
+            width: 60px;
+        }
+        
+        .m-playbar .icn-add {
+            background-position: -88px -163px;
+        }
+        
+        .m-playbar .icn {
+            float: left;
+            width: 25px;
+            height: 25px;
+            margin: 11px 2px 0 0;
+            text-indent: -9999px;
+        }
+        
+        .m-playbar .ctrl {
+            position: relative;
+            z-index: 10;
+            width: 113px;
+            padding-left: 13px;
+            background-position: -147px -238px;
+        }
+        
+        .m-vol {
+            position: absolute;
+            top: -113px;
+            left: 9px;
+            clear: both;
+            width: 32px;
+            height: 113px;
+        }
+        
+        .m-vol .barbg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 113px;
+            background-position: 0 -503px;
+        }
+        
+        .m-vol .vbg {
+            padding: 4px 0;
+            top: 7px;
+        }
+        
+        .m-vol .vbg,
+        .m-vol .curr {
+            position: absolute;
+            top: 11px;
+            left: 14px;
+            width: 4px;
+            height: 93px;
+        }
+        
+        .m-vol .curr {
+            top: auto;
+            bottom: 4px;
+            left: 0;
+            background-position: -40px bottom;
+            overflow: hidden;
+        }
+        
+        .m-vol .btn {
+            position: absolute;
+            top: 0;
+            left: -7px;
+            display: block;
+            width: 18px;
+            height: 20px;
+            background-position: -40px -250px;
+            cursor: pointer;
+        }
+        
+        .m-playbar .icn-vol {
+            background-position: -2px -248px;
+        }
+        
+        .m-playbar .icn-loop {
+            background-position: -3px -344px;
+        }
+    </style>
+
+
+</body>
+
+</html>

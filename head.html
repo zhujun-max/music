@@ -1,0 +1,214 @@
+<!--
+ * @Author: 朱俊
+ * @Date: 2020-07-14 08:59:28
+ * @LastEditTime: 2020-07-14 09:04:52
+ * @LastEditors: Please set LastEditors
+ * @Description: 页头
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="css/head_foot.css">
+</head>
+
+<body>
+    <!-- pc端顶部导航栏 -->
+    <div id="g_topbar" class="g-topbar">
+        <!-- 顶部黑色栏 -->
+        <div class="m-top ">
+            <div class="wrap ">
+                <!-- login -->
+                <h1></h1>
+                <!-- 选项 -->
+                <ul>
+                    <li onclick="javascript:top.location.href='./index.html'" name="/index.html">
+                        <a>发现音乐</a><sub class="cor ">&nbsp;</sub></li>
+                    <li onclick="javascript:top.location.href='./my_music.html'" name="/my_music.html">
+                        <a>我的音乐</a>
+                        <!-- <sub class="cor ">&nbsp;</sub> -->
+                    </li>
+                    <li onclick="javascript:top.location.href='./friend.html'" name="/friend.html">
+                        <a>朋友</a>
+                        <!-- <sub class="cor ">&nbsp;</sub> -->
+                    </li>
+                    <li><a>商城</a>
+                        <!-- <sub class="cor ">&nbsp;</sub> -->
+                    </li>
+                    <li><a>音乐人</a>
+                        <!-- <sub class="cor ">&nbsp;</sub> -->
+                    </li>
+                    <li><a>下载客户端</a>
+                        <!-- <sub class="cor ">&nbsp;</sub> -->
+                    </li>
+                </ul>
+                <!-- 搜索栏 -->
+                <div class="srchbg ">
+                    <i></i>
+                    <input type="text " placeholder="音乐/视频/电台/用户 " onfocus="this.placeholder='' "
+                        onblur="this.placeholder='音乐/视频/电台/用户' ">
+                </div>
+                <!-- 创作者中心 -->
+                <a class="bilog ">创作者中心</a>
+                <!-- 头像 -->
+                <a class="mask ">
+                    <img src="./img/zhuzhu/zhuzhu_05.jpg " alt=" ">
+                </a>
+            </div>
+        </div>
+        <!-- 顶部红色栏 -->
+        <div class="g_nav2 ">
+            <div class="wrap-pr ">
+                <ul>
+                    <li onclick="javascript:top.location.href='./index.html'" name="/index.html"><a>推荐</a></li>
+                    <li onclick="javascript:top.location.href='./chart.html'" name="/chart.html"><a>排行榜</a></li>
+                    <li onclick="javascript:top.location.href='./song_list.html'" name="/song_list.html"><a>歌单</a></li>
+                    <li onclick="javascript:top.location.href='./zhubo.html'" name="/zhubo.html"><a>主播电台</a></li>
+                    <li onclick="javascript:top.location.href='./singer.html'" name="/singer.html"><a>歌手</a></li>
+                    <li onclick="javascript:top.location.href='./plate.html'" name="/plate.html"><a>新碟上架</a></li>
+                    <li onclick="javascript:top.location.href='./homepage.html'" name="/homepage.html"><a>我的主页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 手机版顶部导航栏 -->
+    <!-- <div id="m_top " style="display: none;">
+
+        <div class="m-topbar">
+            <div class="logoin" onclick="ShowDiv('MyDiv2','fade1')"></div>
+            <div class="j-tflag"></div>
+            <div class="seek"></div>
+        </div>
+        侧边栏透明背景
+        <div id="fade1" class="black_overlay" onclick="CloseDiv('MyDiv2','fade1')"></div>
+        侧边栏
+        <div class="sidebar" id="MyDiv2">
+            <div><img src="./img/zhuzhu/zhuzhu_05.jpg" alt=""></div>
+
+
+            <h4>_ _八个霸霸_ _</h4>
+            <div class="folding">
+                <div class="accordion">
+                    <div>
+                        <div>
+                            <h2>
+                                <button data-toggle="collapse" data-target="#collapseOne">
+                                    发现音乐
+                                </bsutton>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show">
+                            <div>
+                                <ul id="hot">
+                                    <li>推荐</li>
+                                    <li>排行榜</li>
+                                    <li>歌单</li>
+                                    <li>主播电台</li>
+                                    <li>歌手</li>
+                                    <li>新碟上架</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>
+                                <button>我的音乐</button>
+                            </h2>
+                        </div>
+                        <div>
+                            <h2>
+                                <button>朋友 </button>
+                            </h2>
+                        </div>
+                        <div>
+                            <h2>
+                                <button>商城</button>
+                            </h2>
+                        </div>
+                        <div>
+                            <h2>
+                                <button>音乐人 </button>
+                            </h2>
+                        </div>
+                        <div>
+                            <h2>
+                                <button>下载客户端</button>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- 代码未使用，响应式不好看 -->
+    <script>
+        // getElementById 是通过id来获取元素，id在HTML中是唯一的，所以获取到的只有一个元素。
+        // getElementsByTagNam 是通过标签名来获取元素，一种标签在HTML中可以有多个，所以获取到的是多个元素，且返回是以集合的形式返回。
+        // getElementsByClassName 是通过类名来获取元素，同名的类在HTML中也能存在多个，所以获取到的也是多个元素，同样是以集合的形式反回。
+        var lis = document.getElementsByClassName('lm');
+        // var box = document.getElementById('box').getElementsByClassName('di1');
+        var box = document.getElementsByClassName('di');
+        for (i = 0; i < lis.length; i++) {
+            // 自定义一个下标，获取下标，为后面div做准备。
+            lis[i].index = i;
+            lis[i].onclick = function () {
+                console.log(this.index);
+                // 排他思想，先清除所有的颜色，双重for循环
+                for (i = 0; i < lis.length; i++) {
+                    lis[i].style.backgroundColor = ''
+                }
+                this.style.backgroundColor = 'red';
+                // console.log(this.index);
+                for (i = 0; i < lis.length; i++) {
+                    box[i].style.display = 'none'
+                }
+                // 得到div下标 this.index
+                box[this.index].style.display = 'block'
+            }
+
+        }
+        // 侧边栏
+        //弹出隐藏层
+        function ShowDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'block';
+            document.getElementById(bg_div).style.display = 'block';
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;
+            $("#" + bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div, bg_div) {
+            document.getElementById(show_div).style.display = 'none';
+            document.getElementById(bg_div).style.display = 'none';
+        };
+
+    </script>
+
+    <script>
+           console.log("请用Live Server打开，不然无法显示页头的页面位置")
+        var test = window.top.location.pathname;
+        var ts = document.querySelectorAll("div>ul>li[name]")
+        // console.log(ts)
+        for (var i = 0; i < ts.length; i++) {
+            var cityid = ts[i].getAttribute("name");
+            // ts[i].className += ' '
+            if (test == cityid) {
+                // console.log(ts + cityid)
+                ts[i].className += 'long-term'
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
